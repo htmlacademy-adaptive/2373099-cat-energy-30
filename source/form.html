@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Подбор программы питания</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/index.js" defer></script>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32.png">
+  </head>
+  <body class="page__body">
+    <header class="main-header">
+      <a class="main-header__logo" href="index.html">
+        <img class="main-header__logo-image" src="images/logo-image.png" alt="Cat energy.">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--current">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Подбор программы
+      </h2>
+      <p>Заполните анкету, и мы подберем
+        программу питания для вашего кота</p>
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="catalog-filter-group">
+            <div class="field-group">
+              <label class="modal-text" for="check-in-name">Имя:*</label>
+              <input class="modal-field" type="text" id="check-in-name" name="name-cat" value="Барсик" placeholder="Укажите имя кота" required>
+            </div>
+            <div class="field-group">
+              <label class="modal-text" for="check-in-name">Вес (кг):*</label>
+              <input class="modal-field" type="text" id="check-in-name" name="weight-cat" value="7" placeholder="Укажите вес кота" required>
+            </div>
+            <div class="field-group">
+              <label class="modal-text" for="check-in-name">Возраст (лет):</label>
+              <input class="modal-field" type="text" id="check-in-name" name="age-cat" value="7" placeholder="Укажите возраст кота" required>
+            </div>
+          </fieldset>
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title visually-hidden">Тип питания:</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input control-input-radio" type="radio" name="nutrition-type" value="weight loss" checked="">
+                  <span class="control-label">Похудение</span>
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input control-input-radio" type="radio" name="nutrition-type" value="weight gain">
+                  <span class="control-label">Набор массы</span>
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input control-input-radio" type="radio" name="nutrition-type" value="i don't know">
+                  <span class="control-label">Не знаю (Нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="">
+            <legend class="">
+              Контактные данные (владельца кота)
+            </legend>
+            <div class="">
+              <label class="" for="check-in-email">E-mail:*</label>
+              <input class="" type="email" id="check-in-email" name="email" value="кuklachev@gmail.com" placeholder="Введите Ваш e-mail" required>
+            </div>
+            <div class="">
+              <label class="" for="check-in-tel">Телефон:*</label>
+              <input class="" type="tel" id="check-in-tel" name="tel" value="8 (960) 900-60-90" placeholder="Введите Ваш номер телефона" required>
+            </div>
+          </fieldset>
+          <fieldset class="">
+            <legend class="">
+              Комментарий
+            </legend>
+            <div class="">
+              <label class="visually-hidden" for="check-in-text">Расскажите обо всех повадках кота</label>
+              <input class="" type="text" id="check-in-text" name="text" value="Расскажите обо всех повадках кота" placeholder="Расскажите обо всех повадках кота" required>
+            </div>
+          </fieldset>
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Дополнительно</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="sweetener" checked="">
+                  <span class="control-label">Сахарозаменитель</span>
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="drinking-water">
+                  <span class="control-label">Питьевая вода</span>
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="milk">
+                  <span class="control-label">Молоко</span>
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="vitamins">
+                  <span class="control-label">Витамины</span>
+                </label>
+              </li>
+            </ul>
+
+          </fieldset>
+<button class="" type="button">Отправить заявку</button>
+            <p class="">* — Обязательные поля</p>
+        </form>
+        <div class="location">
+          <img class="location-image" src="images/location.png">
+        </div>
+
+    </main>
+    <footer class="main-footer">
+      <a class="main-footer__logo">
+        <img class="main-footer__logo-image" src="images/logo-footer.png" alt="Cat energy.">
+      </a>
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social--vk" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">В контакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social--yt" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">You tube</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social--tg" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a class="main-footer__logo">
+        <img class="main-footer__logo-image" src="images/logo-footer.png" alt="Логотип HTML Academy.">
+      </a>
+    </footer>
+  </body>
+</html>
