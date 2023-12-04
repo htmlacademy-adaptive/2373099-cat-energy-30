@@ -19,13 +19,13 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--current">
+          <li class="site-list__item">
             <a href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--current">
             <a href="#">Подбор программы</a>
           </li>
         </ul>
@@ -39,16 +39,16 @@
         <form action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="catalog-filter-group">
             <div class="field-group">
-              <label class="modal-text" for="check-in-name">Имя:*</label>
-              <input class="modal-field" type="text" id="check-in-name" name="name-cat" value="Барсик" placeholder="Укажите имя кота" required>
+              <label class="" for="check-in-name">Имя:<sup>*</sup></label>
+              <input class="" type="text" id="check-in-name" name="name-cat" value="Барсик" placeholder="Укажите имя кота" required>
             </div>
             <div class="field-group">
-              <label class="modal-text" for="check-in-name">Вес (кг):*</label>
-              <input class="modal-field" type="text" id="check-in-name" name="weight-cat" value="7" placeholder="Укажите вес кота" required>
+              <label class="" for="check-in-weight">Вес (кг):<sup>*</sup></label>
+              <input class="" type="text" id="check-in-weight" name="weight-cat" value="7" placeholder="Укажите вес кота" required>
             </div>
             <div class="field-group">
-              <label class="modal-text" for="check-in-name">Возраст (лет):</label>
-              <input class="modal-field" type="text" id="check-in-name" name="age-cat" value="7" placeholder="Укажите возраст кота" required>
+              <label class="" for="check-in-age">Возраст (лет):</label>
+              <input class="" type="text" id="check-in-age" name="age-cat" value="7" placeholder="Укажите возраст кота" required>
             </div>
           </fieldset>
           <fieldset class="catalog-filter-group">
@@ -79,11 +79,11 @@
               Контактные данные (владельца кота)
             </legend>
             <div class="">
-              <label class="" for="check-in-email">E-mail:*</label>
+              <label class="" for="check-in-email">E-mail:<sup>*</sup></label>
               <input class="" type="email" id="check-in-email" name="email" value="кuklachev@gmail.com" placeholder="Введите Ваш e-mail" required>
             </div>
             <div class="">
-              <label class="" for="check-in-tel">Телефон:*</label>
+              <label class="" for="check-in-tel">Телефон:<sup>*</sup></label>
               <input class="" type="tel" id="check-in-tel" name="tel" value="8 (960) 900-60-90" placeholder="Введите Ваш номер телефона" required>
             </div>
           </fieldset>
@@ -126,40 +126,47 @@
             </ul>
 
           </fieldset>
-<button class="" type="button">Отправить заявку</button>
-            <p class="">* — Обязательные поля</p>
-        </form>
-        <div class="location">
-          <img class="location-image" src="images/location.png">
-        </div>
+            <button class="" type="button">Отправить заявку</button>
+            <p class=""><sup>*</sup> — Обязательные поля</p>
+          </form>
+          <section class="contacts">
+            <div class="contacts-wrapper">
+              <h2 class="visually-hidden">Контакты</h2>
+              <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
+              <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+              <img class="contacts__map" src="images/location.png" alt="Карта местоположения.">
+            </div>
+          </section>
 
     </main>
     <footer class="main-footer">
-      <a class="main-footer__logo">
-        <img class="main-footer__logo-image" src="images/logo-footer.png" alt="Cat energy.">
+      <div class="main-footer__wrapper">
+      <a class="main-footer__logo" href="index.html">
+        <img class="main-footer__logo-image" src="images/logo-footer.png" width="128" height="24" alt="Cat energy.">
       </a>
-      <div class="social">
+      <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social--vk" href="https://vk.com/htmlacademy">
+            <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">В контакте</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social--yt" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="social__link social__link--yt" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">You tube</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social--tg" href="https://t.me/htmlacademy">
+            <a class="social__link social__link--tg" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
         </ul>
       </div>
-      <a class="main-footer__logo">
-        <img class="main-footer__logo-image" src="images/logo-footer.png" alt="Логотип HTML Academy.">
+      <a class="main-footer__copyright" href="https://htmlacademy.ru">
+        <img class="main-footer__copyright-image" src="images/html-academy.png" width="168" height="37" alt="Логотип HTML Academy.">
       </a>
+    </div>
     </footer>
   </body>
 </html>

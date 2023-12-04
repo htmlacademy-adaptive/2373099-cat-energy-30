@@ -12,12 +12,13 @@
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image" src="images/logo-image.png" alt="Cat energy.">
+        <img class="main-header__logo-image" src="images/logo-image.png" width="174" height="50" alt="Cat energy.">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
+        <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--current">
             <a href="#">Главная</a>
@@ -29,45 +30,106 @@
             <a href="form.html">Подбор программы</a>
           </li>
         </ul>
+      </div>
       </nav>
     </header>
     <main class="main-container">
-      <h1 class="visually-hidden">Питание для котов Cat energy.</h1>
-      <h2>Функциональное питание для котов</h2>
-      <p>Занялся собой? Займись котом!</p>
-      <button class="" type="button">Подобрать программу</button>
-
-      <section>
-        <h2 class="visually-hidden">Выбор программы питания</h2>
-        <div>
-          <h3>Похудение</h3>
-          <p>Ваш кот весит больше собаки и почти утратил способность
+      <section class="hero">
+        <div class="hero__wrapper">
+        <h1 class="visually-hidden">Питание для котов Cat energy.</h1>
+        <h2 class="hero__title">Функциональное питание для котов</h2>
+        <p class="hero__slogan">Занялся собой? Займись котом!</p>
+        <button class="hero__link-button" type="button">Подобрать программу</button>
+        </div>
+      </section>
+      <section class="program">
+        <div class="program__wrapper">
+          <h2 class="visually-hidden">Выбор программы питания</h2>
+          <div class="program__container program__container--weight-loss">
+          <h3 class="program__title">Похудение</h3>
+          <p class="program__description">Ваш кот весит больше собаки и почти утратил способность
             лазить по деревьям? Пора на диету! Cat Energy Slim поможет
             вашему питомцу сбросить лишний вес.</p>
           <a href="#">Каталог slim</a>
-        </div>
-        <div>
-          <h3>Набор массы</h3>
-          <p>Заработать авторитет среди дворовых котов и даже собак?
+          </div>
+          <div class="program__container program__container--weight-gain">
+          <h3 class="program__title">Набор массы</h3>
+          <p class="program__description">Заработать авторитет среди дворовых котов и даже собак?
             Серия Cat Energy Pro поможет вашему коту нарастить
             необходимые мышцы!</p>
           <a href="#">Каталог pro</a>
+          </div>
         </div>
       </section>
-      <section>
-        <h2>Как это работает</h2>
+      <section class="advantages">
+        <div class="advantages__wrapper">
+          <h2 class="advantages__title">Как это работает</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="none" viewBox="0 0 80 80"><path fill="#68B738" d="M0 0h80v80H0z"/><g clip-path="url(#a)"><path fill="#fff" d="M52.78 26.77a.95.95 0 0 0-.92-.77c-4.94.03-16.95.92-21.8 8.38-2.51 3.88-2.73 8.91-.64 14.96l.07.13a25.92 25.92 0 0 0-1.04 3.32c-.11.54.21 1.07.72 1.19l.2.02c.43 0 .82-.32.91-.79.02-.1 2.4-10.37 10.85-16.38.44-.3.55-.92.26-1.38a.9.9 0 0 0-1.3-.28c-4.78 3.4-7.73 8-9.47 11.65-1.24-4.57-.91-8.37.99-11.3 3.74-5.77 12.62-7.16 17.98-7.45-1.15 1.8-2.41 5.1-2.41 10.93 0 3.12-.83 5.52-2.47 7.14-2.62 2.6-6.88 2.83-10 2.58-.5-.04-.96.38-1 .93-.04.55.35 1.03.87 1.07.62.05 1.28.08 1.98.08 3.17 0 6.87-.66 9.43-3.2 2.03-2 3.06-4.9 3.06-8.6 0-9.1 3.22-11.1 3.23-11.1.4-.21.6-.68.5-1.13Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M25 24h30v32H25z"/></clipPath></defs></svg>
+                <p class="advantages__description">
+                Функциональное питание содержит только полезные питательные вещества.
+                </p>
+            </li>
+            <li class="advantages__item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="none" viewBox="0 0 80 80"><path fill="#68B738" d="M0 0h80v80H0z"/><path fill="#fff" d="M37.88 26c-1.64 0-2.9 1.36-2.9 3.08s1.26 3.08 2.9 3.08c1.63 0 2.9-1.36 2.9-3.08S39.5 26 37.88 26Zm0 1.18c1 0 1.72.84 1.72 1.9 0 1-.8 1.9-1.73 1.9-1 0-1.72-.84-1.72-1.9 0-1 .78-1.9 1.73-1.9ZM27 50.74c0 1.18.4 2.18 1.36 3 1 .84 2.17.77 2.17.77h19.04c.77 0 1.8-.38 2.62-1.45.85-1 .8-2.36.8-2.36V33.5c0-.44-.12-.6-.75-.6-.64 0-.69.27-.69.59V50.7c-.02.3-.07 1.08-.74 1.72-.74.62-1.45.54-1.45.54s-18.13 0-19.03-.03c-.35-.06-.91-.19-1.45-.9-.51-.73-.41-1.63-.41-1.63V33.18c0-.46-.24-.64-.73-.64s-.74.18-.74.58v17.62Zm16.31-16.31c-1.09.23-2.17.38-4.26 2.35-2.08 2-3.62 1.9-5.16 1.82-1.54-.1-3.17-1.54-3.45-1.9-.33-.36-.9-.12-1.08.11-.16.24-.16.64.1 1 1.27 1.18 2.45 2.08 4.72 2.26a7.5 7.5 0 0 0 5.89-2.26c1.45-1.45 2.17-1.72 3.26-1.9a6.3 6.3 0 0 1 5.08 1.26c1 1.1 1.26.78 1.54.48.54-.72-.23-1.27-1.1-1.9a7.24 7.24 0 0 0-5.52-1.28l-.02-.04Zm-9.06 7.16c-1.18 0-2.08 1-2.08 2.26 0 1.27.9 2.27 2.08 2.27 1.18 0 2.08-1 2.08-2.27s-.9-2.26-2.08-2.26Zm11.78.78c-1.54 0-2.8 1.36-2.8 2.99 0 1.63 1.26 2.99 2.8 2.99 1.54 0 2.81-1.36 2.81-3 0-1.62-1.27-2.98-2.8-2.98Zm0 1.45c.8 0 1.45.7 1.45 1.54a1.5 1.5 0 0 1-1.45 1.54c-.8 0-1.45-.7-1.45-1.54 0-.86.65-1.54 1.45-1.54Z"/></svg>
+                <p class="advantages__description">
+                Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+                </p>
+            </li>
+            <li class="advantages__item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="none" viewBox="0 0 80 80"><path fill="#68B738" d="M0 0h80v80H0z"/><path fill="#fff" fill-rule="evenodd" d="M46.62 25.08a1 1 0 0 1 1.09.21c.9.91 2.1 2.88 3.06 5.92A42.6 42.6 0 0 1 52.5 44a1 1 0 0 1-1 1H48v9a1 1 0 1 1-2 0V26a1 1 0 0 1 .62-.92ZM48 43h2.5a39.62 39.62 0 0 0-1.64-11.19 22.4 22.4 0 0 0-.86-2.3V43ZM34 25a1 1 0 0 1 1 1v28a1 1 0 1 1-2 0V26a1 1 0 0 1 1-1Z" clip-rule="evenodd"/><path fill="#fff" fill-rule="evenodd" d="M29.5 25a1 1 0 0 1 1 1v5.5c0 .56.2 1.32.7 1.92.48.56 1.31 1.08 2.8 1.08a1 1 0 1 1 0 2 5.41 5.41 0 0 1-4.33-1.8 5.07 5.07 0 0 1-1.17-3.2V26a1 1 0 0 1 1-1Z" clip-rule="evenodd"/><path fill="#fff" fill-rule="evenodd" d="M38.5 25a1 1 0 0 0-1 1v5.5c0 .56-.2 1.32-.7 1.92-.48.56-1.31 1.08-2.8 1.08a1 1 0 0 0 0 2c2.01 0 3.43-.73 4.33-1.8a5.07 5.07 0 0 0 1.17-3.2V26a1 1 0 0 0-1-1Z" clip-rule="evenodd"/></svg>
+                <p class="advantages__description">
+                Замените один-два приема обычной еды на наше функциональное питание.
+                </p>
+            </li>
+            <li class="advantages__item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="none" viewBox="0 0 80 80"><path fill="#68B738" d="M0 0h80v80H0z"/><path fill="#fff" d="M32.54 25c-1.06 0-1.06 1.58 0 1.58h6.64v1.6c-6.8.44-12.18 6.23-12.18 13.3 0 4.02 1.74 7.64 4.5 10.07.47.43.54 1.18.1 1.64l-1.53 1.55c-.74.69.36 1.75 1.03 1l2-2.03c.35-.34.87-.43 1.3-.21a12.7 12.7 0 0 0 11.07.06c.43-.21.96-.13 1.3.21l1.94 1.97c.68.64 1.65-.31 1.04-1l-1.45-1.48c-.44-.45-.38-1.2.1-1.63A13.46 13.46 0 0 0 53 41.47c0-7.07-5.41-12.87-12.22-13.28v-1.6h6.64c1.06 0 1.06-1.59 0-1.59H32.54Zm-4.1 16.47A11.7 11.7 0 0 1 40 29.65c6.38 0 11.55 5.3 11.55 11.82 0 6.55-5.17 11.85-11.55 11.85-6.38 0-11.57-5.3-11.57-11.85Zm10.75-8.09c0-1.1 1.66-1.1 1.66 0v8.63a.84.84 0 0 1-.85.85.81.81 0 0 1-.8-.8v-8.68ZM34.22 36a1.16 1.16 0 0 0 1.16-1.15 1.15 1.15 0 0 0-1.16-1.15 1.16 1.16 0 0 0-1.05 1.14A1.15 1.15 0 0 0 34.22 36Zm11.55 0a1.16 1.16 0 0 0 1.16-1.15 1.15 1.15 0 0 0-1.16-1.15 1.16 1.16 0 0 0-1.05 1.14A1.15 1.15 0 0 0 45.77 36Zm-10.4 12.59c0 1.53-2.31 1.53-2.31 0s2.32-1.53 2.32 0ZM40 52.03a1.17 1.17 0 0 0 1.17-.68 1.14 1.14 0 0 0-.7-1.56 1.17 1.17 0 0 0-1.22.32 1.15 1.15 0 0 0 .75 1.92Zm-8.09-10.39a1.14 1.14 0 0 1-.68 1.17 1.17 1.17 0 0 1-1.57-.7 1.14 1.14 0 0 1 .32-1.2 1.16 1.16 0 0 1 1.93.73Zm17.33 1.15a1.16 1.16 0 0 0 1.17-.68 1.14 1.14 0 0 0-.7-1.55 1.17 1.17 0 0 0-1.22.32 1.15 1.15 0 0 0 .75 1.91Zm-2.31 5.8c0 1.53-2.32 1.53-2.32 0s2.32-1.53 2.32 0Z"/></svg>
+                <p class="advantages__description">
+                Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+                </p>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section>
-        <h2>Живой пример</h2>
+      <section class="example">
+        <div class="example__wrapper">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой
+            обычный корм на Cat Energy Slim. Отличный результат
+            без изнуряющих тренировок! При этом он не менял своих
+            привычек и по-прежнему спит по 16 часов в день.
+          </p>
+          <ul class="example__list">
+            <li class="example__item example__item--weight">
+              <h3 class="example__subtitle ">5 кг</h3>
+              <p class="example__text">Снижение веса</p>
+            </li>
+            <li class="example__item example__item--time">
+              <h3 class="example__subtitle ">60 дней</h3>
+              <p class="example__text">Затрачено времени</p>
+            </li>
+          </ul>
+          <p class="example__price">Затраты на питание: 15 000 руб.</p>
+          <img class="example__image-cat" src="#" width="280" height="256" alt="Картинка кота до и после.">
+        </div>
+
       </section>
-      <div class="location">
-        <img class="location-image" src="images/location.png">
-      </div>
+
+      <section class="contacts">
+        <div class="contacts-wrapper">
+          <h2 class="visually-hidden">Контакты</h2>
+          <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <img class="contacts__map" src="images/location.png" alt="Карта местоположения.">
+        </div>
+      </section>
     </main>
 
     <footer class="main-footer">
-      <a class="main-footer__logo">
-        <img class="main-footer__logo-image" src="images/logo-footer.png" alt="Cat energy.">
+      <div class="main-footer__wrapper">
+      <a class="main-footer__logo" href="index.html">
+        <img class="main-footer__logo-image" src="images/logo-footer.png" width="128" height="24" alt="Cat energy.">
       </a>
       <div class="main-footer__social social">
         <ul class="social__list">
@@ -88,9 +150,10 @@
           </li>
         </ul>
       </div>
-      <a class="main-footer__logo">
-        <img class="main-footer__logo-image" src="images/logo-footer.png" alt="Логотип HTML Academy.">
+      <a class="main-footer__copyright" href="https://htmlacademy.ru">
+        <img class="main-footer__copyright-image" src="images/html-academy.png" width="168" height="37" alt="Логотип HTML Academy.">
       </a>
+    </div>
     </footer>
   </body>
 </html>
