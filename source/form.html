@@ -17,18 +17,14 @@
   <header class="main-header">
     <a class="main-header__logo logo" href="index.html" aria-current="page">
       <picture>
-        <source type="image/svg+xml" media="(min-width: 1200px)" srcset="images/logo/logo-desktop.svg" width="70"
-          height="59">
-        <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo/logo-tablet.svg" width="60"
-          height="50">
+        <source type="image/svg+xml" media="(min-width: 1200px)" srcset="images/logo/logo-desktop.svg" width="70" height="59">
+        <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo/logo-tablet.svg" width="60" height="50">
         <img class="logo__image logo__image--icon" src="images/logo/logo-mobile.svg" width="33" height="38"
           alt="Логотип «Cat energy».">
       </picture>
       <picture>
-        <source type="image/svg+xml" media="(min-width: 1200px)" srcset="images/logo/logo-text-desktop.svg" width="118"
-          height="21">
-        <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo/logo-text-tablet.svg" width="101"
-          height="18">
+        <source type="image/svg+xml" media="(min-width: 1200px)" srcset="images/logo/logo-text-desktop.svg" width="118" height="21">
+        <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo/logo-text-tablet.svg" width="101" height="18">
         <img class="logo__image logo__image--text" src="images/logo/logo-text-mobile.svg" width="101" height="18"
           alt="Логотип «Cat energy».">
       </picture>
@@ -62,65 +58,65 @@
 
       <form class="form" action="https://echo.htmlacademy.ru/" method="post">
         <div class="form__hero">
-          <fieldset class="form__module form__module--info">
-            <legend class="form__legend visually-hidden">Заполните данные кота</legend>
-            <div class="form-group">
-              <label class="form-group__label" for="check-in-name">Имя:<sup>*</sup></label>
-              <input class="form-group__input" type="text" id="check-in-name" name="name-cat" value="Барсик"
-                placeholder="Укажите имя кота" required>
-            </div>
-            <div class="form-group">
-              <label class="form-group__label" for="check-in-weight">Вес (кг):<sup>*</sup></label>
-              <input class="form-group__input" type="text" id="check-in-weight" name="weight-cat" value="7"
-                placeholder="Укажите вес кота" required>
-            </div>
-            <div class="form-group">
-              <label class="form-group__label" for="check-in-age">Возраст (лет):</label>
-              <input class="form-group__input" type="text" id="check-in-age" name="age-cat" value="7"
-                placeholder="Укажите возраст кота" required>
-            </div>
-          </fieldset>
-          <fieldset class="form__module form__module--type-programm">
-            <legend class="form__legend visually-hidden">Тип питания</legend>
-            <div class="type-programm">
-              <ul class="type-programm__list">
-                <li class="type-programm__item">
-                  <label class="control">
-                    <input class="control__input control__input-radio" type="radio" name="nutrition-type"
-                      value="weight loss" checked="">
-                    <span class="control__label">Похудение</span>
-                  </label>
-                </li>
-                <li class="type-programm__item">
-                  <label class="control">
-                    <input class="control__input control__input-radio" type="radio" name="nutrition-type"
-                      value="weight gain">
-                    <span class="control__label">Набор массы</span>
-                  </label>
-                </li>
-                <li class="type-programm__item">
-                  <label class="control">
-                    <input class="control__input control__input-radio" type="radio" name="nutrition-type"
-                      value="i don't know">
-                    <span class="control__label">Не знаю (Нужен ваш совет)</span>
-                  </label>
-                </li>
-              </ul>
-            </div>
+        <fieldset class="form__module form__module--info">
+          <legend class="form__legend visually-hidden">Заполните данные кота</legend>
+          <div class="form-group">
+            <label class="form-group__label" for="check-in-name">Имя:<sup>*</sup></label>
+            <input class="form-group__input" type="text" id="check-in-name" name="name-cat" value="Барсик"
+              placeholder="Укажите имя кота" required>
+          </div>
+          <div class="form-group">
+            <label class="form-group__label" for="check-in-weight">Вес (кг):<sup>*</sup></label>
+            <input class="form-group__input" type="text" id="check-in-weight" name="weight-cat" value="7"
+              placeholder="Укажите вес кота" required>
+          </div>
+          <div class="form-group">
+            <label class="form-group__label" for="check-in-age">Возраст (лет):</label>
+            <input class="form-group__input" type="text" id="check-in-age" name="age-cat" value="7"
+              placeholder="Укажите возраст кота" required>
+          </div>
+        </fieldset>
+        <fieldset class="form__module form__module--type-programm">
+          <legend class="form__legend visually-hidden">Тип питания</legend>
+          <div class="type-programm">
+            <ul class="type-programm__list">
+              <li class="type-programm__item">
+                <label class="type-programm__label">
+                  <input class="type-programm__input type-programm__input--radio" type="radio" name="nutrition-type"
+                    value="weight loss" checked="">
+                  <span class="type-programm__text">Похудение</span>
+                </label>
+              </li>
+              <li class="type-programm__item">
+                <label class="type-programm__label">
+                  <input class="type-programm__input type-programm__input--radio" type="radio" name="nutrition-type"
+                  value="weight gain">
+                  <span class="type-programm__text">Набор массы</span>
+                </label>
+              </li>
+              <li class="type-programm__item">
+                <label class="type-programm__label">
+                  <input class="type-programm__input type-programm__input--radio" type="radio" name="nutrition-type"
+                  value="i don't know">
+                  <span class="type-programm__text">Не знаю (Нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </div>
         </div>
         </fieldset>
         <fieldset class="form__module form__module--address">
           <legend class="form__legend">
             Контактные данные (владельца кота)
           </legend>
-          <div class="address">
-            <label class="address__label" for="check-in-email">E-mail:<sup>*</sup></label>
-            <input class="address__input" type="email" id="check-in-email" name="email" value="kuklachev@gmail.com"
+          <div class="form-group">
+            <label class="form-group__label form-group__label--adress" for="check-in-email">E-mail:<sup>*</sup></label>
+            <input class="form-group__input form-group__input--adress" type="email" id="check-in-email" name="email" value="kuklachev@gmail.com"
               placeholder="Введите Ваш e-mail" required>
           </div>
-          <div class="tel">
-            <label class="tel__label" for="check-in-tel">Телефон:<sup>*</sup></label>
-            <input class="tel__input" type="tel" id="check-in-tel" name="tel" value="8 (960) 900-60-90"
+          <div class="form-group">
+            <label class="form-group__label form-group__label--tel" for="check-in-tel">Телефон:<sup>*</sup></label>
+            <input class="form-group__input form-group__input--tel" type="tel" id="check-in-tel" name="tel" value="8 (960) 900-60-90"
               placeholder="Введите Ваш номер телефона" required>
           </div>
         </fieldset>
@@ -128,42 +124,42 @@
           <legend class="form__legend">
             Комментарий
           </legend>
-          <div class="comment">
+          <div class="form-group">
             <label class="visually-hidden" for="check-in-text">Расскажите обо всех повадках кота</label>
-            <textarea class="comment-input" id="check-in-text" name="text"
+            <textarea class="form-group__input" id="check-in-text" name="text"
               placeholder="Расскажите обо всех повадках кота" required></textarea>
           </div>
         </fieldset>
         <fieldset class="form__module form__module--additionary">
           <legend class="form__legend">Дополнительно</legend>
           <div class="catalog-additional">
-            <ul class="catalog-additional__list">
-              <li class="catalog-additional__item">
-                <label class="control">
-                  <input class="control__input" type="checkbox" name="sweetener" checked="">
-                  <span class="control__label">Сахарозаменитель</span>
-                </label>
-              </li>
-              <li class="catalog-additional__item">
-                <label class="control">
-                  <input class="control__input" type="checkbox" name="drinking-water">
-                  <span class="control__label">Питьевая вода</span>
-                </label>
-              </li>
-              <li class="catalog-additional__item">
-                <label class="control">
-                  <input class="control__input" type="checkbox" name="milk">
-                  <span class="control__label">Молоко</span>
-                </label>
-              </li>
-              <li class="catalog-additional__item">
-                <label class="control">
-                  <input class="control__input" type="checkbox" name="vitamins">
-                  <span class="control__label">Витамины</span>
-                </label>
-              </li>
-            </ul>
-          </div>
+          <ul class="catalog-additional__list">
+            <li class="catalog-additional__item">
+              <label class="catalog-additional__label">
+                <input class="catalog-additional__input" type="checkbox" name="sweetener" checked="">
+                <span class="catalog-additional__text">Сахарозаменитель</span>
+              </label>
+            </li>
+            <li class="catalog-additional__item">
+              <label class="catalog-additional__label">
+                <input class="catalog-additional__input" type="checkbox" name="drinking-water">
+                <span class="catalog-additional__text">Питьевая вода</span>
+              </label>
+            </li>
+            <li class="catalog-additional__item">
+              <label class="catalog-additional__label">
+                <input class="catalog-additional__input" type="checkbox" name="milk">
+                <span class="catalog-additional__text">Молоко</span>
+              </label>
+            </li>
+            <li class="catalog-additional__item">
+              <label class="catalog-additional__label">
+                <input class="catalog-additional__input" type="checkbox" name="vitamins">
+                <span class="catalog-additional__text">Витамины</span>
+              </label>
+            </li>
+          </ul>
+        </div>
 
         </fieldset>
         <div class="form__button">
@@ -181,14 +177,11 @@
       <iframe id="inlineFrameExample" title="Inline Frame Map" width="100%" height="400" allowfullscreen="true"
         src="https://yandex.ru/map-widget/v1/-/CBFkaYSE0A" frameborder="0"></iframe>
       <picture>
-        <source type="image/png" media="(min-width: 1440px)"
-          srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x" width="1440" height="400">
-        <source type="image/png" media="(min-width: 768px)"
-          srcset="images/map/map-tablet@1x.png 1x, images/map/map-tablet@2x.png 2x" width="758" height="400">
-        <img src="images/map/map-mobile@1x.png" srcset="images/map/map-mobile@2x.png 2x" width="320" height="362"
-          alt="Карта.">
-      </picture>
-    </section>
+          <source type="image/png" media="(min-width: 1440px)" srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x" width="1440" height="400">
+          <source type="image/png" media="(min-width: 768px)" srcset="images/map/map-tablet@1x.png 1x, images/map/map-tablet@2x.png 2x" width="758" height="400">
+          <img src="images/map/map-mobile@1x.png" srcset="images/map/map-mobile@2x.png 2x" width="320" height="362" alt="Карта.">
+        </picture>
+      </section>
 
   </main>
   <footer class="main-footer">

@@ -30,13 +30,21 @@
   -webkit-mask: var(--bgi) no-repeat center / contain;
   mask: var(--bgi) no-repeat center / contain;
 }
+.social__link:hover,
+.social__link:focus {
+  --color: #68b738;
+}
+.social__link:active {
+  --color: rgb(104, 183, 56, 0.3);
+}
+
 .social__link--vk {
-  --bgi: url("../images/icon-social/vk.svg");
+  --bgi: url("../../images/icons-social/vk.svg");
 }
 .social__link--yt {
-  --bgi: url("../images/icon-social/youtube.svg");
+  --bgi: url("../../images/icons-social/youtube.svg");
 }
 .social__link--tg {
-  --bgi: url("../images/icon-social/telegram.svg");
+  --bgi: url("../../images/icons-social/telegram.svg");
 }
 

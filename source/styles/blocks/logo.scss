@@ -4,6 +4,13 @@
   gap: 15px;
   align-items: center;
 }
+.logo:hover,
+.logo:focus {
+  opacity: 0.8;
+}
+.logo:active {
+  opacity: 0.6;
+}
 .logo__image {
   padding-top: 55px;
 }

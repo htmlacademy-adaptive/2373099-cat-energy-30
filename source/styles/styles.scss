@@ -1,12 +1,14 @@
 /* GLOBAL */
 @import "./global/variables.scss";
-@import "./global/global.scss";
 @import "./global/mixins.scss";
+@import "./global/global.scss";
 @import "./global/fonts.scss";
+
 
 /* BLOCKS */
 @import "./blocks/visually-hiden.scss";
 @import "./blocks/page.scss";
+@import "./blocks/page-container.scss";
 @import "./blocks/button.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/logo.scss";
@@ -24,5 +26,7 @@
 @import "./blocks/additional.scss";
 @import "./blocks/main-form.scss";
 @import "./blocks/form.scss";
+@import "./blocks/type-programm.scss";
+@import "./blocks/form-group.scss";
 @import "./blocks/catalog-additional.scss";
 
