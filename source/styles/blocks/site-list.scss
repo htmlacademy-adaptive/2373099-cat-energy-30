@@ -1,0 +1,27 @@
+.site-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  max-width: 550px;
+  justify-content: flex-end;
+  list-style-type: none;
+  padding-top: 71px;
+}
+
+.site-list__item:not(:last-child) {
+  padding-right: 32px;
+}
+
+.site-list__link {
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  padding: 12px 0;
+  text-transform: uppercase;
+}
+
+.site-list__item--current {
+
+}

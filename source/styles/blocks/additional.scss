@@ -1,0 +1,50 @@
+.additional {
+
+}
+.additional__title {
+  font-size: 24px;
+  line-height: 24px;
+}
+.additional__name {
+  color: #222222;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+.additional__item {
+  display: flex;
+  justify-content: space-between;
+}
+.additional__description {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 14px;
+}
+.additional__subtitle {
+  color: $secondary-color
+}
+.additional__text {
+  color: $secondary-color;
+}
+.additional__button {
+  padding: 10px 91px;
+}
+
+.additional__info {
+  display: flex;
+	margin: 0 0 20px 0;
+	overflow: hidden;
+}
+.additional__info dt {
+	margin: 0;
+	padding: 5px 0;
+	width: 150px;
+	float: left;
+	clear: both;
+	color: $secondary-color;
+}
+.additional__info dd {
+	margin: 0 0 0 150px;
+	padding: 5px 0;
+  color: $secondary-color;
+}

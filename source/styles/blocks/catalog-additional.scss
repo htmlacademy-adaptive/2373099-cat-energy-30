@@ -1,0 +1,26 @@
+.catalog-additional {}
+
+.catalog-additional__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.catalog-additional__item {
+  list-style-type: none;
+}
+
+.catalog-additional__label {
+  font-family: inherit;
+  color: $secondary-color;
+}
+
+.catalog-additional__input {
+
+}
+
+.catalog-additional__text {
+  font-family: inherit;
+  text-transform: uppercase;
+}

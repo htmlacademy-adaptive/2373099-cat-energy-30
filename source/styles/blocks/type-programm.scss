@@ -1,0 +1,25 @@
+.type-programm {}
+
+.type-programm__list {}
+
+.type-programm__item {
+  list-style-type: none;
+  font-family: inherit;
+  margin-bottom: 13px;
+}
+
+.type-programm__label {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $secondary-color;
+}
+
+.type-programm__input {
+
+}
+
+.type-programm__text {
+  font-family: inherit;
+}
