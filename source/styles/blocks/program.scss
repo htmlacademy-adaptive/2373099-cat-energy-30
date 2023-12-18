@@ -4,13 +4,32 @@
 
 .program__container {
   background-color: #f2f2f2;
+  padding: 0 20px;
+  margin: 0 20px;
+}
+@media (min-width: $tablet-width) {
+  .program__container {
+    padding: 0 30px;
+    margin: 0 52px;
+  }
+}
+@media (min-width: $desktop-width) {
+.program__container {
+  padding: 0 110px;
+  margin: 0 52px;
+  }
 }
 .program__wrapper {
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
 
+}
+@media (min-width: $tablet-width) {
+  .program__wrapper {
+  gap: 30px;
+  }
+}
 @media (min-width: $desktop-width) {
 .program__wrapper {
   display: grid;
@@ -45,7 +64,6 @@
   line-height: 18px;
   color: $secondary-color;
   margin: 0;
-  margin-left: 20px;
 }
 @media (min-width: $tablet-width) {
   .program__description {

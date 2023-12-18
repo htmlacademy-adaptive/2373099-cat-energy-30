@@ -3,8 +3,7 @@
 }
 .form__hero {
   display: flex;
-  gap: 80px;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .form__module {
@@ -22,6 +21,18 @@
   font-size: 24px;
   line-height: 26px;
 }
+@media (min-width: $tablet-width) {
+  .form__legend {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .form__legend {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
 .form__module--type-programm {
 
 }
@@ -35,6 +46,4 @@
 .form__module--additionary {
   display: flex;
 }
-.form__button {
 
-}

@@ -1,8 +1,17 @@
 .logo {
   display: flex;
-  padding-left: 80px;
-  gap: 15px;
+  gap: 56px;
   align-items: center;
+}
+@media (min-width: $tablet-width) {
+  .logo {
+    gap: 13px;
+}
+}
+@media (min-width: $desktop-width) {
+  .logo {
+    gap: 13px;
+}
 }
 .logo:hover,
 .logo:focus {
@@ -12,7 +21,7 @@
   opacity: 0.6;
 }
 .logo__image {
-  padding-top: 55px;
+
 }
 .logo__image--icon {
 

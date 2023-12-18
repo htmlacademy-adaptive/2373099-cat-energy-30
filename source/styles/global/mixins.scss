@@ -7,18 +7,3 @@
     src: $font-src;
   }
 }
-
-@mixin button {
-  display: block;
-  min-height: 20px;
-  min-width: 40px;
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 20px;
-  align-self: center;
-  color: #ffffff;
-  background-color: #68b738;
-  text-transform: uppercase;
-  border: none;
-  text-decoration: none;
-}

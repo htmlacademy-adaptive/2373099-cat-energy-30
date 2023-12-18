@@ -1,0 +1,32 @@
+.form-other {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: $tablet-width) {
+  .form-other {
+   flex-direction: row;
+   gap:80px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .form-other {
+    flex-direction: row;
+    gap: 80px;
+  }
+}
+.form-other__button {
+  padding: 10px 78px;
+  width: 280px;
+}
+@media (min-width: $tablet-width) {
+  .form-other__button {
+    padding: 14px 65px;
+    width: 570px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .form-other__button {
+    padding: 14px 208px;
+
+  }
+}
