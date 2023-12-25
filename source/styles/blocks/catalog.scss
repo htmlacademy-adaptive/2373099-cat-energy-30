@@ -6,35 +6,73 @@
 }
 
 .catalog__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 80px;
+  display: grid;
   padding: 0;
   list-style: none;
 }
-
-.catalog__item {
-  width: 320px;
-  min-height: 209px;
-  padding: 20px 20px 25px 20px;
-
+@media (min-width: $tablet-width) {
+  .catalog__list {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 63px;
+  }
 }
 
+.catalog__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px 20px 25px 20px;
+  border-top: #EBEBEB 1px solid;
+}
+@media (min-width: $tablet-width) {
+  .catalog__item {
+    background: linear-gradient(0deg, rgba(242,242,242,1) 78%, rgba(255,255,255,1) 78%);
+    border: none;
+    padding: 0;
+
+  }
+}
+@media (min-width: $desktop-width) {
+  .catalog__item {
+    padding: 0;
+  }
+}
+@media (min-width: $tablet-width){
+.catalog__image {
+  position: relative;
+    left: 42px;
+}
+}
+
+
 .catalog__name {
+  margin: 0;
+  margin-right: 64px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
 }
 @media (min-width: $tablet-width) {
   .catalog__name {
+    grid-column: 1/3;
     font-size: 20px;
     line-height: 24px;
+    text-align: center;
+    margin: 20px 95px;
   }
 }
 @media (min-width: $desktop-width) {
   .catalog__name {
+    grid-column: 1/3;
     font-size: 20px;
     line-height: 24px;
+    margin: 20px 53px;
   }
 }
 
@@ -43,6 +81,7 @@
 }
 
 .catalog__info {
+  grid-column: 2/3;
   font-family: $secondary-font;
   color: $secondary-color;
   font-size: 12px;
@@ -52,31 +91,43 @@
 }
 @media (min-width: $tablet-width) {
   .catalog__info {
+    grid-column: 1/3;
     font-size: 16px;
     line-height: 20px;
+    margin: 0 37px;
   }
 }
 @media (min-width: $desktop-width) {
   .catalog__info {
-    font-size: 16px;
-    line-height: 20px;
+    grid-column: 1/3;
+    margin: 0 38px;
   }
 }
 
-.catalog__info dt {
+.catalog__subtitle {
   margin: 0;
   padding: 5px 0;
-  width: 150px;
   float: left;
   clear: both;
 }
 
-.catalog__info dd {
+.catalog__text {
   padding: 5px 0;
+  float: right;
+  margin: 0;
 }
 
 .catalog__button {
+  grid-column: 1/3;
   padding: 10px 53px 10px 54px;
-  width: 100%;
 }
-
+@media (min-width: $tablet-width) {
+  .catalog__button {
+    margin: 32px 37px 40px 37px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .catalog__button {
+    margin: 32px 38px 40px 38px;
+  }
+}

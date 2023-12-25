@@ -16,12 +16,7 @@
     line-height: normal;
   }
 }
-@media (min-width: $desktop-width) {
-  .form-group__label {
-    font-size: 20px;
-    line-height: normal;
-  }
-}
+
 .form-group__input {
   font-family: inherit;
   text-transform: uppercase;
@@ -40,9 +35,4 @@
     line-height: normal;
   }
 }
-@media (min-width: $desktop-width) {
-  .form-group__input {
-    font-size: 20px;
-    line-height: normal;
-  }
-}
+

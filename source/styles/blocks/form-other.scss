@@ -4,24 +4,20 @@
 }
 @media (min-width: $tablet-width) {
   .form-other {
-   flex-direction: row;
-   gap:80px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 60px;
   }
 }
-@media (min-width: $desktop-width) {
-  .form-other {
-    flex-direction: row;
-    gap: 80px;
-  }
-}
+
 .form-other__button {
   padding: 10px 78px;
-  width: 280px;
+  width: 100%;
 }
 @media (min-width: $tablet-width) {
   .form-other__button {
     padding: 14px 65px;
-    width: 570px;
+
   }
 }
 @media (min-width: $desktop-width) {

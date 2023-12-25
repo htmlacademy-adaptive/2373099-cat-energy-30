@@ -7,11 +7,7 @@
     gap: 23px;
   }
 }
-@media (min-width: $desktop-width) {
-  .copyright {
-    gap: 23px;
-  }
-}
+
 .copyright__text {
   color: $secondary-color;
   align-self: center;

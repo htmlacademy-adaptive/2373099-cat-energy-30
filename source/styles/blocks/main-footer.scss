@@ -31,69 +31,8 @@
     justify-content: flex-start;
   }
 }
-@media (min-width: $desktop-width) {
-  .main-footer__logo {
-    justify-content: flex-start;
-  }
-}
+
 .main-footer__social {
 
 }
-.main-footer__copyright {
-  display: flex;
-  justify-content: space-between;
-}
-@media (min-width: $tablet-width) {
-  .main-footer__copyright {
-    gap: 23px;
-  }
-}
-@media (min-width: $desktop-width) {
-  .main-footer__copyright {
-    gap: 23px;
-  }
-}
-.main-footer__copyright-text {
-  color: $secondary-color;
-  align-self: center;
-}
-.main-footer__copyright-text:hover,
-.main-footer__copyright-text:focus {
-  color: $secondary-color;
-}
-.main-footer__copyright-text:active {
-  color: rgb(68, 68, 68, 0.3);
-}
-.main-footer__copyright-image--logo {
-  --color: #444444;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  width: 115px;
-  height: 33px;
-}
 
-.main-footer__copyright-image--logo {
-  content: "";
-  display: block;
-  background-color: var(--color);
-  width: 40px;
-  height: 40px;
-  -webkit-mask: var(--bgi) no-repeat center / contain;
-  mask: var(--bgi) no-repeat center / contain;
-}
-.main-footer__copyright-image {
-  --bgi: url("../../images/html-academy.svg");
-}
-
-.main-footer__copyright-image--logo:hover {
-  --color: #68b738;
-}
-
-.main-footer__copyright-image--logo:active {
-  --color: rgba(104, 183, 56, 0.3)
-}
-
-.main-footer__copyright-image--logo:focus {
-  --color: #68b738;
-}

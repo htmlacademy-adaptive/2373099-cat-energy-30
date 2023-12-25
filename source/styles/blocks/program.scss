@@ -4,20 +4,28 @@
 
 .program__container {
   background-color: #f2f2f2;
-  padding: 0 20px;
-  margin: 0 20px;
+  padding: 20px 20px;
 }
 @media (min-width: $tablet-width) {
   .program__container {
-    padding: 0 30px;
-    margin: 0 52px;
+    padding-bottom: 57px;
+    padding-top: 77px;
+    padding-left: 53px;
   }
 }
 @media (min-width: $desktop-width) {
 .program__container {
-  padding: 0 110px;
-  margin: 0 52px;
+  padding: 0;
+  padding-left: 52px;
+  padding-right: 62px;
+  padding-bottom: 59px;
   }
+}
+.program__icon--cat-skinny {
+  background-image: url("../../images/icons/stack.svg#cat-skinny");
+}
+.program__icon--cat-mass {
+  background-image: url("../../images/icons/stack.svg#cat-mass");
 }
 .program__wrapper {
   display: flex;
@@ -38,6 +46,59 @@
   }
 }
 
+.program__icon {
+  position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .program__icon {
+    position: relative;
+    top: 80px;
+    left: 470px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .program__icon {
+    position: relative;
+    top: 50px;
+  }
+}
+.program__icon--cat-skinny {
+  width: 50px;
+  height: 53px;
+}
+@media (min-width: $tablet-width) {
+.program__icon--cat-skinny {
+  width: 200px;
+  height: 211px;
+}
+}
+@media (min-width: $desktop-width) {
+.program__icon--cat-skinny {
+  left: 0;
+  width: 100px;
+  height: 106px;
+}
+}
+.program__icon--cat-mass {
+  width: 69px;
+  height: 50px;
+  left: -9px;
+}
+@media (min-width: $tablet-width) {
+.program__icon--cat-mass {
+  width: 268px;
+  height: 200px;
+}
+}
+@media (min-width: $desktop-width) {
+.program__icon--cat-mass {
+  left: -19px;
+  width: 138px;
+  height: 100px;
+}
+}
+
 .program__title {
   font-weight: bold;
   text-transform: uppercase;
@@ -45,17 +106,24 @@
   line-height: 37px;
   margin: 0;
   margin-bottom: 29px;
+  margin-left: 90px;
+  margin-top: -50px;
 }
 @media (min-width: $tablet-width) {
   .program__title {
   font-size: 36px;
   line-height: 36px;
+  margin: 0;
+
+  margin-bottom: 24px;
   }
 }
 @media (min-width: $desktop-width) {
   .program__title {
-  font-size: 36px;
-  line-height: 36px;
+  margin: 0;
+  margin-top: -23px;
+  margin-left: 214px;
+  margin-bottom: 73px;
   }
 }
 
@@ -69,12 +137,14 @@
   .program__description {
     font-size: 16px;
     line-height: 24px;
+    margin-right: 316px;
   }
 }
 @media (min-width: $desktop-width) {
   .program__description {
     font-size: 16px;
     line-height: 24px;
+    margin: 0;
   }
 }
 .program__description:after {
@@ -86,7 +156,36 @@
 }
 
 .program__link {
+  display: flex;
   text-decoration: none;
   color: inherit;
-
+  text-transform: uppercase;
+  --color: #000000;
 }
+
+.program__link::after{
+  display: block;
+  content: "";
+  --bgi: url("../../images/icons/stack.svg#icon-arrow");
+  width: 32px;
+  margin-left: 15px;
+  background-color: var(--color);
+  -webkit-mask: var(--bgi) no-repeat center / contain;
+  mask: var(--bgi) no-repeat center / contain;
+}
+
+.program__link:hover,
+.program__link:focus {
+  --color: rgb(0, 0, 0, 0.6);
+}
+.program__link:active {
+  --color: rgb(0, 0, 0, 0.3);
+}
+
+
+@media (min-width: $tablet-width) {
+  .program__link::after {
+    margin-left: 25px;
+  }
+}
+
