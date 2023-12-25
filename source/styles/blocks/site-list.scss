@@ -5,13 +5,11 @@
   padding: 0;
   align-items: center;
   max-width: 550px;
-  justify-content: flex-end;
   list-style-type: none;
-  padding-top: 71px;
 }
 
 .site-list__item:not(:last-child) {
-  padding-right: 32px;
+  margin-right: 32px;
 }
 
 .site-list__link {
@@ -21,7 +19,13 @@
   padding: 12px 0;
   text-transform: uppercase;
 }
-
-.site-list__item--current {
-
+.site-list__link:hover,
+.site-list__link:focus {
+  opacity: 0.6;
+}
+.site-list__link:active {
+  opacity: 0.3;
+}
+.site-list__item--current .site-list__link {
+  border-bottom: 2px #68b738 solid;
 }

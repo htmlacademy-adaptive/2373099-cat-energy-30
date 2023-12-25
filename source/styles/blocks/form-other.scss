@@ -1,0 +1,28 @@
+.form-other {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: $tablet-width) {
+  .form-other {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 60px;
+  }
+}
+
+.form-other__button {
+  padding: 10px 78px;
+  width: 100%;
+}
+@media (min-width: $tablet-width) {
+  .form-other__button {
+    padding: 14px 65px;
+
+  }
+}
+@media (min-width: $desktop-width) {
+  .form-other__button {
+    padding: 14px 208px;
+
+  }
+}

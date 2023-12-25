@@ -17,29 +17,22 @@
     line-height: 60px;
   }
 }
-@media (min-width: $desktop-width) {
-  .advantages__title {
-    font-size: 60px;
-    line-height: 60px;
-  }
-}
+
 
 .advantages__list {
   display: flex;
   flex-direction: column;
+  padding: 0;
 }
 @media (min-width: $tablet-width) {
   .advantages__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
     }
   }
 @media (min-width: $desktop-width) {
 .advantages__list {
-  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 80px;
   }
 }
 .advantages__item {
@@ -47,6 +40,10 @@
 }
 
 .advantages__description {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 20px;
+  align-items: center;
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 18px;
@@ -56,11 +53,47 @@
   .advantages__description {
     font-size: 16px;
     line-height: 24px;
+    grid-template-columns: 1fr;
     }
   }
-@media (min-width: $desktop-width) {
-.advantages__description {
-    font-size: 16px;
-    line-height: 24px;
+  .advantages__description::before {
+    display: block;
+    background-color: #68b738;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-position: center;
+  }
+  @media (min-width: $tablet-width) {
+    .advantages__description::before {
+      width: 80px;
+      height: 80px;
+      }
+    }
+  .advantages__description--leaf::before {
+    background-image: url(../../images/icons-advantages/icon-leaf.svg);
+    background-repeat: no-repeat;
+  }
+  .advantages__description--water::before {
+    background-image: url(../../images/icons-advantages/icon-water.svg);
+    background-repeat: no-repeat;
+  }
+  .advantages__description--eat::before {
+    background-image: url(../../images/icons-advantages/icon-eat.svg);
+    background-repeat: no-repeat;
+  }
+  .advantages__description--time::before {
+    background-image: url(../../images/icons-advantages/icon-time.svg);
+    background-repeat: no-repeat;
+  }
+  @media (min-width: $tablet-width) {
+  .advantages__description::after {
+    display: block;
+    color: #F2F2F2;
+    content: "1";
+    font-size: 280px;
+    line-height: 280px;
+
   }
 }
+

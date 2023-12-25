@@ -1,10 +1,20 @@
-.form {
 
-}
 .form__hero {
-  display: flex;
-  gap: 80px;
-  justify-content: space-between;
+  display: grid;
+  gap: 40px;
+  margin-bottom: 24px;
+}
+@media (min-width: $tablet-width) {
+  .form__hero {
+    gap: 72px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .form__hero {
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin-bottom: 70px;
+  }
 }
 
 .form__module {
@@ -21,20 +31,23 @@
 .form__legend {
   font-size: 24px;
   line-height: 26px;
+  margin-bottom: 24px;
 }
-.form__module--type-programm {
-
+@media (min-width: $tablet-width) {
+  .form__legend {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+  }
 }
 
-.form__module--address {
-
+.form__module--active {
+  border-top: 2px red solid;
+  padding: 0;
 }
-.form__module--comment {
 
-}
+
 .form__module--additionary {
   display: flex;
 }
-.form__button {
 
-}

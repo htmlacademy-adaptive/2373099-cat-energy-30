@@ -14,7 +14,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="main-header page-container">
     <a class="main-header__logo logo" href="index.html" aria-current="page">
       <picture>
         <source type="image/svg+xml" media="(min-width: 1200px)" srcset="images/logo/logo-desktop.svg" width="70"
@@ -39,10 +39,10 @@
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--current">
+          <li class="site-list__item">
             <a class="site-list__link" href="index.html">Главная</a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--current">
             <a class="site-list__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
@@ -53,7 +53,7 @@
     </nav>
   </header>
   <main>
-    <section class="catalog">
+    <section class="catalog page-container">
       <h1 class="catalog__title">Каталог продукции</h1>
       <h2 class="visually-hidden">Список карточек товаров</h2>
       <ul class="catalog__list">
@@ -224,7 +224,7 @@
     <section class="additional">
       <h2 class="additional__title">Дополнительные товары</h2>
 
-      <ul class="additional__list">
+      <ul class="additional__list page-container">
         <li class="additional__item">
           <h3 class="additional__name">Сахарозаменитель</h3>
           <dl class="additional__info">
@@ -252,12 +252,17 @@
         <li class="additional__item">
           <h3 class="additional__name">Витамины</h3>
           <dl class="additional__info">
-            <dt>1 упаковка (30 г)</dt>
-            <dd>300 ₽</dd>
+            <dt class="additional__subtitle">1 упаковка (30 г)</dt>
+            <dd class="additional__text">300 ₽</dd>
           </dl>
           <button class="additional__button button" type="button">Заказать</button>
         </li>
       </ul>
+      <div class="additional__present">
+        <p class="additional__text additional__text--present">Закажите все
+          и получите чехол для
+          кота в подарок!</p>
+      </div>
 
     </section>
 
@@ -268,8 +273,8 @@
         <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
 
       </div>
-      <iframe id="inlineFrameExample" title="Inline Frame Map" width="100%" height="400" allowfullscreen="true"
-        src="https://yandex.ru/map-widget/v1/-/CBFkaYSE0A" frameborder="0"></iframe>
+      <iframe class="contacts__map" id="inlineFrameExample" title="Inline Frame Map" height="400"
+        src="https://yandex.ru/map-widget/v1/-/CBFkaYSE0A"></iframe>
       <picture>
         <source type="image/png" media="(min-width: 1440px)"
           srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x" width="1440" height="400">
@@ -312,11 +317,11 @@
           </li>
         </ul>
       </section>
-      <div class="main-footer__copyright">
-        <a class="main-footer__copyright-text" href="https://htmlacademy.ru">HTML Academy
-          <img class="main-footer__copyright-image" src="images/html-academy.svg" width="27" height="34"
-            alt="Логотип HTML Academy.">
-        </a>
+      <div class="main-footer__copyright copyright">
+        <a class="copyright__text" href="https://htmlacademy.ru">HTML Academy</a>
+          <a class="copyright__image copyright__image--logo" href="https://htmlacademy.ru">
+            <span class="visually-hidden">Логотип HTML Academy</span>
+          </a>
       </div>
     </div>
   </footer>

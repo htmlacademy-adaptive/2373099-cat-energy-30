@@ -14,7 +14,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="main-header page-container">
     <a class="main-header__logo logo" href="index.html" aria-current="page">
       <picture>
         <source type="image/svg+xml" media="(min-width: 1200px)" srcset="images/logo/logo-desktop.svg" width="70" height="59">
@@ -35,13 +35,13 @@
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--current">
+          <li class="site-list__item">
             <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--current">
             <a class="site-list__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
@@ -50,14 +50,14 @@
   </header>
   <main class="main-form">
     <h1 class="visually-hidden">Страница подбора программы питания</h1>
-    <div class="main-form__wrapper">
+    <div class="main-form__wrapper ">
       <h2 class="main-form__title">Подбор программы
       </h2>
       <p class="main-form__description">Заполните анкету, и мы подберем
         программу питания для вашего кота</p>
 
       <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-        <div class="form__hero">
+        <div class="form__hero page-container">
         <fieldset class="form__module form__module--info">
           <legend class="form__legend visually-hidden">Заполните данные кота</legend>
           <div class="form-group">
@@ -102,10 +102,10 @@
                 </label>
               </li>
             </ul>
-          </div>
+
         </div>
         </fieldset>
-        <fieldset class="form__module form__module--address">
+        <fieldset class="form__module form__module--active">
           <legend class="form__legend">
             Контактные данные (владельца кота)
           </legend>
@@ -120,7 +120,7 @@
               placeholder="Введите Ваш номер телефона" required>
           </div>
         </fieldset>
-        <fieldset class="form__module form__module--comment">
+        <fieldset class="form__module form__module--active">
           <legend class="form__legend">
             Комментарий
           </legend>
@@ -130,9 +130,9 @@
               placeholder="Расскажите обо всех повадках кота" required></textarea>
           </div>
         </fieldset>
-        <fieldset class="form__module form__module--additionary">
+        <fieldset class="form__module form__module--additional form__module--active">
           <legend class="form__legend">Дополнительно</legend>
-          <div class="catalog-additional">
+          <div class="catalog-additional page-container">
           <ul class="catalog-additional__list">
             <li class="catalog-additional__item">
               <label class="catalog-additional__label">
@@ -162,9 +162,9 @@
         </div>
 
         </fieldset>
-        <div class="form__button">
-          <button class="form__button button" type="submit">Отправить заявку</button>
-          <p class="form__description"><sup>*</sup> — Обязательные поля</p>
+        <div class="form-other">
+          <button class="form-other__button button" type="submit">Отправить заявку</button>
+          <p class="form-other__description"><sup>*</sup> — Обязательные поля</p>
         </div>
     </div>
     </form>
@@ -174,15 +174,15 @@
         <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
         <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
-      <iframe id="inlineFrameExample" title="Inline Frame Map" width="100%" height="400" allowfullscreen="true"
-        src="https://yandex.ru/map-widget/v1/-/CBFkaYSE0A" frameborder="0"></iframe>
+      <iframe class="contacts__map" id="inlineFrameExample" title="Inline Frame Map" height="400"
+        src="https://yandex.ru/map-widget/v1/-/CBFkaYSE0A"></iframe>
       <picture>
           <source type="image/png" media="(min-width: 1440px)" srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x" width="1440" height="400">
           <source type="image/png" media="(min-width: 768px)" srcset="images/map/map-tablet@1x.png 1x, images/map/map-tablet@2x.png 2x" width="758" height="400">
           <img src="images/map/map-mobile@1x.png" srcset="images/map/map-mobile@2x.png 2x" width="320" height="362" alt="Карта.">
         </picture>
       </section>
-
+    </div>
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
@@ -214,11 +214,11 @@
           </li>
         </ul>
       </section>
-      <div class="main-footer__copyright">
-        <a class="main-footer__copyright-text" href="https://htmlacademy.ru">HTML Academy
-          <img class="main-footer__copyright-image" src="images/html-academy.svg" width="27" height="34"
-            alt="Логотип HTML Academy.">
-        </a>
+      <div class="main-footer__copyright copyright">
+        <a class="copyright__text" href="https://htmlacademy.ru">HTML Academy</a>
+          <a class="copyright__image copyright__image--logo" href="https://htmlacademy.ru">
+            <span class="visually-hidden">Логотип HTML Academy</span>
+          </a>
       </div>
     </div>
   </footer>
