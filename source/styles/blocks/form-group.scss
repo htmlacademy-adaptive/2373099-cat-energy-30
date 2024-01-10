@@ -25,14 +25,50 @@
   padding-top: 14px;
   padding-bottom: 13px;
   padding-left: 15px;
+  padding-right: 14px;
   border: 1px solid #e7e7e7;
   color: $secondary-color;
   flex: 1;
-}
-@media (min-width: $tablet-width) {
-  .form-group__input {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: normal;
-  }
+}
+}
+.form-group__input:hover,
+.form-group__input:focus {
+  border-color: #cdcdcd;
+}
+.form-group__input:active {
+  border-color: #444444;
 }
 
+.form-group__input--comment {
+  min-height: 150px;
+  margin-bottom: 9px;
+  @media (min-width: $tablet-width) {
+    min-height: 175px;
+    margin-bottom: 51px;
+}
+@media (min-width: $desktop-width) {
+  margin-bottom: 56px;
+}
+}
+
+.form-group__input--adress {
+ display: block;
+content: "";
+background-image: url(../../images/icon-email.svg);
+background-repeat: no-repeat;
+background-position: calc(100% - 12px) 50%;
+@media (min-width: $tablet-width) {
+  background-position: calc(100% - 16px) 50%;
+}
+}
+
+.form-group__input--tel {
+  display: block;
+ content: "";
+ background-image: url(../../images/icon-tel.svg);
+ background-repeat: no-repeat;
+ background-position: calc(100% - 12px) 50%;
+ }

@@ -1,9 +1,59 @@
 .main-header {
-  display: flex;
-  justify-content: space-between;
   padding-top: 25px;
+  @media (min-width: $desktop-width) {
+  background: linear-gradient(90deg,rgba(255,255,255,0) 50%,rgba(104,183,56,.85) 50%), url("../../images/hero-background.jpg");
+    background-repeat: no-repeat;
+    background-position-x: 140%;
+  padding-top: 55px;
+  }
+}
+.main-header--secondary {
+  background: none;
 }
 .main-header__logo {
   display: flex;
 
+}
+.main-header__wrapper {
+  display: grid;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.main-header__nav {
+  grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    @media (min-width: $tablet-width) {
+      margin: 0;
+    }
+}
+.main-header__wrapper--white {
+  background: none;
+}
+.main-header__toggle {
+  width: 24px;
+  height: 24px;
+  background-image: url("../../images/buttom-mobile.svg");
+  background-repeat: no-repeat;
+  border: none;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    background: transparent;
+    border: none !important;
+    font-size: 0;
+    position: absolute;
+  }
+}
+.main-header__toggle.active {
+  width: 24px;
+  height: 24px;
+  background-image: url("../../images/close-menu.svg");
+  background-repeat: no-repeat;
+  border: none;
+  background-color: #ffffff;
 }

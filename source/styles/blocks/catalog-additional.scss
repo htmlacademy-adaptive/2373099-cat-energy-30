@@ -2,10 +2,12 @@
 
 .catalog-additional__list {
   display: flex;
+  gap: 12px;
   flex-wrap: wrap;
   justify-content: space-between;
   flex-direction: column;
   padding: 0;
+  margin: 0;
   width: 100%;
 }
 @media (min-width: $tablet-width) {
@@ -40,8 +42,9 @@
   appearance: none;
   width: 30px;
   height: 30px;
+  margin: 0;
   background-color: #ffffff;
-  border: 1px #444444 solid;
+  border: 1px #cdcdcd solid;
 }
 @media (min-width: $tablet-width) {
   .catalog-additional__input {

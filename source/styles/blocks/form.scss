@@ -18,10 +18,8 @@
 }
 
 .form__module {
-  min-width: 570px;
   list-style-type: none;
   border: none;
-  margin: 0;
   padding: 0;
 }
 
@@ -29,17 +27,84 @@
 
 }
 .form__legend {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   margin-bottom: 24px;
-}
+  width: fit-content;
 @media (min-width: $tablet-width) {
-  .form__legend {
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
+    margin-left: 40px;
   }
 }
+.form__legend::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10px;
+  width: 100vh;
+  height: 2px;
+  background: #68b738;
+  right: calc(100% + 20px);
+  @media (min-width: $tablet-width) {
+    right: calc(100% + 40px);
+  }
+}
+.form__legend::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10px;
+  width: 100vh;
+  height: 2px;
+  background: #68b738;
+  left: calc(100% + 20px);
+  @media (min-width: $tablet-width) {
+    left: calc(100% + 40px);
+  }
+}
+
+
+
+.form__legend--adress {
+  margin-top: 26px;
+  margin-bottom: 35px;
+  margin-right: 93px;
+  @media (min-width: $tablet-width) {
+    margin-top: 65px;
+    margin-bottom: 76px;
+  }
+  @media (min-width: $tablet-width) {
+    margin-top: 70px;
+    margin-bottom: 76px;
+  }
+}
+
+.form__legend--comment {
+  margin-top: 24px;
+  margin-bottom: 38px;
+  @media (min-width: $tablet-width) {
+    margin-top: 65px;
+    margin-bottom: 87px;
+  }
+  @media (min-width: $tablet-width) {
+    margin-top: 70px;
+    margin-bottom: 78px;
+  }
+}
+.form__legend--additional {
+  margin-bottom: 34px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+  }
+
+}
+
 
 .form__module--active {
   border-top: 2px red solid;
@@ -50,4 +115,5 @@
 .form__module--additionary {
   display: flex;
 }
+
 

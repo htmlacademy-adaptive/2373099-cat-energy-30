@@ -1,28 +1,39 @@
 .form-other {
   display: flex;
   flex-direction: column;
-}
-@media (min-width: $tablet-width) {
-  .form-other {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   gap: 60px;
+  margin-top: 34px;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-top: 52px;
+    margin-bottom: 60px;
   }
+    @media (min-width: $desktop-width) {
+      margin-top: 60px;
+      }
+
 }
 
 .form-other__button {
   padding: 10px 78px;
   width: 100%;
-}
 @media (min-width: $tablet-width) {
-  .form-other__button {
     padding: 14px 65px;
-
-  }
 }
 @media (min-width: $desktop-width) {
-  .form-other__button {
-    padding: 14px 208px;
+      padding: 14px 208px;
+}
+}
 
-  }
+.form-other__description {
+  margin: 0;
+  margin-top: 21px;
+  align-self: center;
+  @media (min-width: $tablet-width) {
+    margin: 0;
+}
+@media (min-width: $desktop-width) {
+      padding: 14px 208px;
+}
 }
