@@ -54,7 +54,8 @@
 .site-list__link:focus {
   opacity: 0.6;
 }
-.site-list__link:active {
+.site-list__link:disabled,
+.site-list__link--disabled:hover  {
   opacity: 0.3;
 }
 .site-list__item--current .site-list__link {
@@ -82,6 +83,10 @@
 .site-list__link--secondary:focus {
   opacity: 0.6;
 }
-.site-list__link--secondary:active {
+
+
+.site-list__link--secondary:disabled,
+.site-list__link--secondary--disabled:hover  {
   opacity: 0.3;
 }
+

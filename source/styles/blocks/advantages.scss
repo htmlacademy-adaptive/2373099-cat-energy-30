@@ -26,10 +26,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     counter-reset: new 0;
+    row-gap: 37px;
+    column-gap: 177px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 80px;
   }
 }
 

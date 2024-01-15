@@ -13,15 +13,13 @@
   <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-icon-192x192.png">
   <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/burger-menu.js" defer></script>
+  <script src="scripts/cat-slider.js" defer></script>
 </head>
-
-
 
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper page-container">
       <div class="main-header__nav">
-
         <a class="main-header__logo logo" href="index.html" aria-current="page">
           <picture>
             <source type="image/svg+xml" media="(min-width: 1220px)" srcset="images/logo/logo-desktop.svg" width="70"
@@ -31,23 +29,14 @@
             <img class="logo__image logo__image--icon" src="images/logo/logo-mobile.svg" width="33" height="38"
               alt="Логотип «Cat energy».">
           </picture>
-          <picture>
-            <source type="image/svg+xml" media="(min-width: 1220px)" srcset="images/logo/logo-text-desktop.svg"
-              width="118" height="21">
-            <source type="image/svg+xml" media="(min-width: 708px)" srcset="images/logo/logo-text-tablet.svg"
-              width="101" height="18">
-            <img class="logo__image logo__image--text" src="images/logo/logo-text-mobile.svg" width="101" height="18"
-              alt="Логотип «Cat energy».">
-          </picture>
+          <img class="logo__image logo__image--text" src="images/logo/logo-text-mobile.svg" width="101" height="18"
+            alt="Логотип «Cat energy».">
         </a>
-
         <button class="main-header__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-
       </div>
       <nav class="main-nav">
-
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--current">
@@ -61,17 +50,13 @@
             </li>
           </ul>
         </div>
-
       </nav>
     </div>
-
     <section class="hero">
       <div class="hero__background">
         <div class="hero__wrapper page-container">
-          <h1 class="visually-hidden">Питание для котов Cat energy.</h1>
-          <h2 class="hero__title">Функциональное питание для котов</h2>
+          <h1 class="hero__title">Функциональное питание для котов</h1>
           <p class="hero__slogan">Занялся собой? Займись котом!</p>
-
           <div class="hero__image">
             <picture>
               <source type="image/png" media="(min-width: 1200px)"
@@ -80,7 +65,6 @@
                 srcset="images/hero-cat-tablet.png 1x, images/hero-cat-tablet@2x.png 2x" width="709" height="609">
               <img src="images/hero-cat-mobile.png" srcset="images/hero-cat-mobile@2x.png 2x" width="280" height="270"
                 alt="Образец корма.">
-
             </picture>
           </div>
           <a class="hero__link button" href="form.html">Подобрать программу</a>
@@ -88,35 +72,27 @@
       </div>
     </section>
   </header>
-  <main class="main-container">
-
+  <main class="main main-container">
     <section class="program page-container">
-      <div class="program__wrapper">
-        <h2 class="visually-hidden">Выбор программы питания</h2>
-        <div class="program__container program__container--weight-loss">
-          <div class="program__icon program__icon--cat-skinny">
-          </div>
-
-
+      <h2 class="visually-hidden">Выбор программы питания</h2>
+      <ul class="program__wrapper">
+        <li class="program__container program__container--weight-loss">
           <h3 class="program__title">Похудение</h3>
           <p class="program__description">Ваш кот весит больше собаки и почти утратил способность
             лазить по деревьям? Пора на диету! Cat Energy Slim поможет
             вашему питомцу сбросить лишний вес.</p>
           <a class="program__link" href="#">Каталог Slim</a>
-        </div>
-        <div class="program__container program__container--weight-gain">
-          <div class="program__icon program__icon--cat-mass">
+        </li>
 
-          </div>
-
+        <li class="program__container program__container--weight-gain">
 
           <h3 class="program__title">Набор массы</h3>
           <p class="program__description">Заработать авторитет среди дворовых котов и даже собак?
             Серия Cat Energy Pro поможет вашему коту нарастить
             необходимые мышцы!</p>
           <a class="program__link" href="#">Каталог Pro</a>
-        </div>
-      </div>
+        </li>
+      </ul>
     </section>
     <section class="advantages page-container">
       <div class="advantages__wrapper">
@@ -161,9 +137,10 @@
         <p class="example__price"><span class="example__primary">Затраты на питание:</span>
           <span class="example__secondary">15 000 руб.</span>
         </p>
-        <div class="example__images">
 
-          <div class="example__figure">
+
+          <section class="example__figure">
+            <h2 class="visually-hidden">Слайдер кота до и после.</h2>
             <div class="example__cat example__cat--before">
               <picture>
                 <source type="image/png" media="(min-width: 768px)"
@@ -173,7 +150,6 @@
                   srcset="images/example/mobile-cat-before@2x.png 2x" alt="Кот до программы">
               </picture>
             </div>
-
             <div class="example__cat example__cat--after">
 
               <picture>
@@ -184,24 +160,15 @@
                   srcset="images/example/mobile-cat-after@2x.png 2x" alt="Кот после программы">
               </picture>
             </div>
-            <div class="example__slider range">
-              <div class="range__scale">
-                <div class="range__bar" style="left: 0; width: 4px">
-                  <button class="range__toggle range__toggle--left" type="button">
-                    <span class="visually-hidden">Изменить картинку влево</span>
-                  </button>
-                  <button class="range__toggle range__toggle--right" type="button">
-                    <span class="visually-hidden">Изменить картинку вправо</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
+                <input class="example__input" type="range" min="0" max="100" value="50" aria-label="Просмотр фото.">
+                <div class="example__button" aria-hidden="true"></div>
+
+              </section>
+              <output class="visually-hidden">50%</output>
       </div>
 
     </section>
-
     <section class="contacts">
       <div class="contacts__wrapper page-container">
         <h2 class="visually-hidden">Контакты</h2>
@@ -211,10 +178,16 @@
           <p class="contacts__text contacts__text--adress">Санкт-Петербург</p>
         </div>
       </div>
+
       <iframe class="contacts__map" id="inlineFrameExample"
-        title="Офис компании по адресу Большая Конюшенная ул., 19/8, Санкт-Петербург." height="362"
-        src="https://yandex.ru/map-widget/v1/-/CBFkaYSE0A"></iframe>
-      <picture>
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728594!2d30.320472477064786!3d59.93871647491513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1705254762023!5m2!1sru!2sru"
+        width="100%"
+        height="362"
+        allowfullscreen
+        title="Офис компании по адресу Большая Конюшенная ул., 19/8, Санкт-Петербург."
+      ></iframe
+      >
+      <picture class="contacts__picture">
         <source type="image/png" media="(min-width: 1440px)"
           srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x" width="1220" height="400">
         <source type="image/png" media="(min-width: 768px)"
@@ -224,7 +197,6 @@
       </picture>
     </section>
   </main>
-
   <footer class="main-footer">
     <div class="main-footer__wrapper page-container">
       <a class="main-footer__logo logo" href="index.html">
@@ -264,8 +236,6 @@
         </a>
       </div>
     </div>
-
-
   </footer>
 </body>
 

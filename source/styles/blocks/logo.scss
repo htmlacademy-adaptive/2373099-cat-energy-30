@@ -2,30 +2,28 @@
   display: flex;
   gap: 56px;
   align-items: center;
-}
-@media (min-width: $tablet-width) {
-  .logo {
+
+  @media (min-width: $tablet-width) {
     gap: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 14px;
+  }
 }
-}
-@media (min-width: $desktop-width) {
-  .logo {
-    gap: 13px;
-}
-}
+
 .logo:hover,
 .logo:focus {
   opacity: 0.8;
 }
+
 .logo:active {
   opacity: 0.6;
 }
-.logo__image {
 
-}
-.logo__image--icon {
-
-}
 .logo__image--text {
-
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 21px;
+  }
 }
