@@ -97,39 +97,31 @@
   line-height: 26px;
   margin-bottom: 24px;
   width: fit-content;
+  background: #ffff;
+  box-shadow: -40px 0px 0px #ffffff, 40px 0px 0px #ffffff;
 @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
-    margin-left: 40px;
   }
 }
 .form__legend::before {
   content: "";
   display: block;
   position: absolute;
-  top: 10px;
+  top: 18px;
   width: 100vw;
   height: 2px;
   background: #68b738;
   right: calc(100% + 20px);
+  box-shadow: 100vw 0px 0px #68b738;
+    z-index: -1;
   @media (min-width: $tablet-width) {
     right: calc(100% + 40px);
+
   }
 }
-.form__legend::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 10px;
-  width: 100vw;
-  height: 2px;
-  background: #68b738;
-  left: calc(100% + 20px);
-  @media (min-width: $tablet-width) {
-    left: calc(100% + 40px);
-  }
-}
+
 
 
 
@@ -142,6 +134,7 @@
     margin-bottom: 76px;
   }
   @media (min-width: $tablet-width) {
+    margin: 0;
     margin-top: 70px;
     margin-bottom: 76px;
   }

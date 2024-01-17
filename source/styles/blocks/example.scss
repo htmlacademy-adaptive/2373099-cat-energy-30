@@ -195,32 +195,15 @@
 
 .example__cat--before {
   justify-content: flex-start;
-  width: 140px;
   grid-column: 1/2;
   grid-row: 1/2;
-
-  @media (min-width: $tablet-width) {
-    width: 278px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 280px;
-  }
 }
 
 .example__cat--after {
   justify-content: flex-end;
-  width: 140px;
   grid-column: 2/3;
   grid-row: 1/2;
 
-  @media (min-width: $tablet-width) {
-    width: 278px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 280px;
-  }
 }
 
 .example__input {
@@ -267,6 +250,6 @@
 }
 
 .example__input:focus-visible+.button-line::after {
-  color: red;
+  color: #666666;
   background: #ffffff;
 }

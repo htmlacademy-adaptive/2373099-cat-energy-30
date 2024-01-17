@@ -1,4 +1,6 @@
-.main-nav {}
+.main-nav {
+
+}
 
 @media (min-width: $tablet-width) {
   .main-nav {
@@ -8,8 +10,16 @@
 }
 .main-nav__wrapper {
   display: none;
+  position: absolute;
+  background: #ffffff;
+  min-width: 100%;
+  left: 0%;
+  z-index: 2;
+
   @media (min-width: $tablet-width) {
     display: block;
+    position: inherit;
+    background: none;
   }
 }
 .main-nav__wrapper.active {

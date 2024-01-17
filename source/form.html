@@ -11,6 +11,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
   <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-icon-192x192.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/burger-menu.js" defer></script>
 </head>
 
@@ -63,18 +64,18 @@
           <fieldset class="form__module form__module--info">
             <legend class="visually-hidden">Заполните данные кота</legend>
             <div class="form-group">
-              <label class="form-group__label" for="check-in-name">Имя:<sup>*</sup></label>
+              <label class="form-group__label" for="check-in-name">Имя:*</label>
               <input class="form-group__input" type="text" id="check-in-name" name="name-cat" placeholder="Барсик"
                 required>
             </div>
             <div class="form-group">
-              <label class="form-group__label" for="check-in-weight">Вес (кг):<sup>*</sup></label>
+              <label class="form-group__label" for="check-in-weight">Вес (кг):*</label>
               <input class="form-group__input" type="text" id="check-in-weight" name="weight-cat" placeholder="7"
                 required>
             </div>
             <div class="form-group">
               <label class="form-group__label" for="check-in-age">Возраст (лет):</label>
-              <input class="form-group__input" type="text" id="check-in-age" name="age-cat" placeholder="7" required>
+              <input class="form-group__input" type="text" id="check-in-age" name="age-cat" placeholder="7">
             </div>
           </fieldset>
           <fieldset class="form__module form__module--type-programm">
@@ -112,15 +113,14 @@
           <div class="form__wrapper form__wrapper--adress page-container">
             <h3 class="form__legend form__legend--adress">Контактные данные (владельца кота)</h3>
             <div class="form-group form-group--adress">
-              <label class="form-group__label form-group__label--adress"
-                for="check-in-email">E-mail:<sup>*</sup></label>
-              <input class="form-group__input form-group__input--adress" type="email" id="check-in-email" name="email"
-                placeholder="kuklachev@gmail.com" required>
+              <label class="form-group__label form-group__label--adress" for="check-in-email">E-mail:*<input
+                  class="form-group__input form-group__input--adress" type="email" id="check-in-email" name="email"
+                  placeholder="kuklachev@gmail.com" required></label>
             </div>
             <div class="form-group form-group--tel">
-              <label class="form-group__label form-group__label--tel" for="check-in-tel">Телефон:<sup>*</sup></label>
-              <input class="form-group__input form-group__input--tel" type="tel" id="check-in-tel" name="tel"
-                placeholder="8 (960) 900-60-90" required>
+              <label class="form-group__label form-group__label--tel" for="check-in-tel">Телефон:*<input
+                  class="form-group__input form-group__input--tel" type="tel" id="check-in-tel" name="tel"
+                  placeholder="8 (960) 900-60-90" required></label>
             </div>
           </div>
         </fieldset>
@@ -132,7 +132,7 @@
             <div class="form-group">
               <label class="visually-hidden" for="check-in-text">Расскажите обо всех повадках кота</label>
               <textarea class="form-group__input form-group__input--comment" id="check-in-text" name="text"
-                placeholder="Расскажите обо всех повадках кота" required></textarea>
+                placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
           </div>
         </div>
@@ -172,7 +172,7 @@
         </fieldset>
         <div class="form-other page-container">
           <button class="form-other__button button" type="submit">Отправить заявку</button>
-          <p class="form-other__description"><sup>*</sup> — Обязательные поля</p>
+          <p class="form-other__description">*— Обязательные поля</p>
         </div>
       </form>
       <section class="contacts contacts--catalog">
@@ -185,13 +185,9 @@
           </div>
         </div>
         <iframe class="contacts__map" id="inlineFrameExample"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728594!2d30.320472477064786!3d59.93871647491513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1705254762023!5m2!1sru!2sru"
-        width="100%"
-        height="362"
-        allowfullscreen
-        title="Офис компании по адресу Большая Конюшенная ул., 19/8, Санкт-Петербург."
-      ></iframe
-      >
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728594!2d30.320472477064786!3d59.93871647491513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1705254762023!5m2!1sru!2sru"
+          width="100%" height="362" allowfullscreen
+          title="Офис компании по адресу Большая Конюшенная ул., 19/8, Санкт-Петербург."></iframe>
         <picture class="contacts__picture">
           <source type="image/png" media="(min-width: 1440px)"
             srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x" width="1220" height="400">

@@ -22,26 +22,24 @@
   line-height: 24px;
   font-weight: 400;
   width: fit-content;
+  background: #ffff;
+    box-shadow: -40px 0px 0px #ffffff, 40px 0px 0px #ffffff;
+    @media (min-width: $desktop-width) {
+      font-size: 36px;
+      line-height: 36px;
+    }
 }
 .additional__title::before {
   content: "";
   display: block;
   position: absolute;
-  top: 10px;
-  width: 100vh;
-  height: 2px;
-  background: #68b738;
-  right: calc(100% + 20px);
-}
-.additional__title::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 10px;
+  top: 18px;
   width: 100vw;
   height: 2px;
   background: #68b738;
-  left: calc(100% + 20px);
+  right: calc(100% + 20px);
+  box-shadow: 100vw 0px 0px #68b738;
+    z-index: -1;
 }
 
 .additional__list {
