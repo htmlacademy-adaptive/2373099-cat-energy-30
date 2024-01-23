@@ -1,13 +1,10 @@
 .main-nav {
-
-}
-
-@media (min-width: $tablet-width) {
-  .main-nav {
+  @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
   }
 }
+
 .main-nav__wrapper {
   display: none;
   position: absolute;
@@ -22,7 +19,12 @@
     background: none;
   }
 }
+
 .main-nav__wrapper.active {
   display: grid;
 }
 
+.main-nav__wrapper--nojs {
+  display: grid;
+  position: relative;
+}

@@ -6,30 +6,36 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-  max-width: 550px;
-  gap: 33px;
+    max-width: 550px;
+    gap: 33px;
   }
+
   @media (min-width: $desktop-width) {
-    gap: 32px;
+    gap: 35px;
   }
 }
+
 .site-list.active {
   display: grid;
 }
+
 .site-list__item {
-    margin-bottom: 24px;
-    @media (min-width: $tablet-width) {
-      margin: 0;
-    }
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
+
 .site-list__item::before {
   display: block;
   content: "";
   border-top: 1px solid #e6e6e6;
   margin-bottom: 22px;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -42,53 +48,59 @@
   text-align: center;
   padding: 22px 0;
   text-transform: uppercase;
+
   @media (min-width: $tablet-width) {
-  padding: 10px 0;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 4px 0;
   }
+
   @media (min-width: $desktop-width) {
     color: #ffffff;
-    padding: 12px 0;
+    padding: 5px 0;
     font-size: 20px;
     line-height: normal;
+  }
 }
-}
+
 .site-list__link:hover,
 .site-list__link:focus {
   opacity: 0.6;
 }
+
 .site-list__link:disabled,
-.site-list__link--disabled:hover  {
+.site-list__link--disabled:hover {
   opacity: 0.3;
 }
+
 .site-list__item--current .site-list__link {
   @media (min-width: $tablet-width) {
-  border-bottom: 2px #68b738 solid;
+    border-bottom: 2px #68b738 solid;
   }
 
   @media (min-width: $desktop-width) {
     border-bottom: 2px #ffffff solid;
-}
-}
-.site-list__item--secondary .site-list__link{
-  @media (min-width: $tablet-width) {
-  border-bottom: 2px #68b738 solid;
   }
-
 }
-.site-list__link--secondary {
 
+.site-list__item--secondary .site-list__link {
+  @media (min-width: $tablet-width) {
+    border-bottom: 2px #68b738 solid;
+  }
+}
+
+.site-list__link--secondary {
   @media (min-width: $desktop-width) {
     color: $primary-color;
+  }
 }
-}
+
 .site-list__link--secondary:hover,
 .site-list__link--secondary:focus {
   opacity: 0.6;
 }
 
-
 .site-list__link--secondary:disabled,
-.site-list__link--secondary--disabled:hover  {
+.site-list__link--secondary--disabled:hover {
   opacity: 0.3;
 }
-

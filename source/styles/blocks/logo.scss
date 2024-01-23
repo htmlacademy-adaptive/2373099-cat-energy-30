@@ -21,9 +21,23 @@
   opacity: 0.6;
 }
 
+.logo__image--icon {
+  margin-top: 2px;
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
 .logo__image--text {
   @media (min-width: $desktop-width) {
     width: 118px;
     height: 21px;
+  }
+}
+.logo__image--footer {
+  width: 128px;
+    height: 24px;
+  @media (min-width: $tablet-width) {
+
   }
 }

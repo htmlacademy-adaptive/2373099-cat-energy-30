@@ -1,16 +1,19 @@
 .copyright {
   display: flex;
   justify-content: space-between;
-}
+
 @media (min-width: $tablet-width) {
-  .copyright {
     gap: 23px;
   }
 }
 
 .copyright__text {
+  font-family: $secondary-font;
   color: $secondary-color;
   align-self: center;
+  @media (min-width: $desktop-width) {
+
+  }
 }
 .copyright__text:hover,
 .copyright__text:focus {
@@ -32,10 +35,14 @@
   content: "";
   display: block;
   background-color: var(--color);
-  width: 40px;
-  height: 40px;
+  width: 27px;
+  height: 34px;
   -webkit-mask: var(--bgi) no-repeat center / contain;
   mask: var(--bgi) no-repeat center / contain;
+  @media (min-width: $tablet-width) {
+    width: 27px;
+    height: 34px;
+  }
 }
 .copyright__image{
   --bgi: url("../../images/html-academy.svg");

@@ -1,0 +1,27 @@
+.button-burger {
+  width: 24px;
+  height: 24px;
+  background-image: url("../../images/buttom-mobile.svg");
+  background-repeat: no-repeat;
+  border: none;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    background: transparent;
+    border: none !important;
+    font-size: 0;
+    position: absolute;
+  }
+}
+
+.button-burger.active {
+  width: 24px;
+  height: 24px;
+  background-image: url("../../images/close-menu.svg");
+  background-repeat: no-repeat;
+  border: none;
+  background-color: #ffffff;
+}
+.button-burger--nojs {
+  display: none;
+}
