@@ -7,12 +7,6 @@
 
 .main-nav__wrapper {
   display: none;
-  position: absolute;
-  background: #ffffff;
-  min-width: 100%;
-  left: 0%;
-  z-index: 2;
-
   @media (min-width: $tablet-width) {
     display: block;
     position: inherit;
@@ -21,10 +15,18 @@
 }
 
 .main-nav__wrapper.active {
+  position: absolute;
   display: grid;
+  background: #ffffff;
+  min-width: 100%;
+  left: 0%;
+  z-index: 2;
 }
 
 .main-nav__wrapper--nojs {
-  display: grid;
-  position: relative;
+  display: block;
+  background: #ffffff;
+  min-width: 100%;
+  left: 0%;
+  z-index: 2;
 }
