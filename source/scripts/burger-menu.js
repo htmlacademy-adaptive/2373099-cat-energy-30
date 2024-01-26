@@ -1,6 +1,6 @@
-let navMain = document.querySelector('.main-nav');
-let navToggle = document.querySelector('.main-header__toggle');
-let navBurger = document.querySelector('.button-burger');
+const navMain = document.querySelector('.main-nav');
+const navToggle = document.querySelector('.main-header__toggle');
+const navBurger = document.querySelector('.button-burger');
 
 navMain.classList.remove('main-nav--nojs');
 navBurger.classList.remove('button-burger--nojs');
