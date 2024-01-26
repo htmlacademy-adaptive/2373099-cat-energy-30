@@ -1,15 +1,13 @@
 .example {
-  background-color: #f2f2f2;
+  background: #f2f2f2;
   margin-top: 44px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    background: none;
     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 59%, rgba(242, 242, 242, 1) 59%);
   }
 
   @media (min-width: $desktop-width) {
-    background: none;
     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 23%, rgba(242, 242, 242, 1) 23%);
   }
 }
@@ -17,9 +15,6 @@
 .example__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
-
-  @media (min-width: $tablet-width) {}
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 433px 1fr;
@@ -40,7 +35,6 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-top: 45px;
     margin-top: 84px;
   }
 
@@ -150,8 +144,6 @@
     font-size: 30px;
     line-height: 37px;
   }
-
-  @media (min-width: $desktop-width) {}
 }
 
 .example__text {
@@ -178,7 +170,6 @@
     background-color: #f2f2f2;
   }
 }
-
 
 .example__price {
   font-size: 14px;
@@ -213,9 +204,6 @@
 }
 
 .example__primary {
-
-  @media (min-width: $tablet-width) {}
-
   @media (min-width: $desktop-width) {
     grid-row: 1/2;
     text-align: center;
@@ -223,9 +211,6 @@
 }
 
 .example__secondary {
-
-  @media (min-width: $tablet-width) {}
-
   @media (min-width: $desktop-width) {
     grid-row: 1/2;
     text-align: left;
@@ -234,8 +219,6 @@
 
 .example__slider-images {
   grid-column: 1/3;
-
-  @media (min-width: $tablet-width) {}
 
   @media (min-width: $desktop-width) {
     grid-column: 2/3;
@@ -285,7 +268,6 @@
   justify-content: flex-end;
   grid-column: 2/3;
   grid-row: 1/2;
-
 }
 
 .example__input {
@@ -313,17 +295,17 @@
   content: "";
   flex-shrink: 0;
   display: block;
-  background-image: url(../../images/icons/thumb.svg);
+  background-image: url("../../images/icons/thumb.svg");
   width: 40px;
   height: 40px;
 }
 
-.example__input:active+.button-line::after {
+.example__input:active + .button-line::after {
   color: #666666;
   background: #ffffff;
 }
 
-.example__input:focus-visible+.button-line::after {
+.example__input:focus-visible + .button-line::after {
   color: #666666;
   background: #ffffff;
 }

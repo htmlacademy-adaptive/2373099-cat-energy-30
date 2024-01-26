@@ -5,7 +5,7 @@ const navBurger = document.querySelector('.button-burger');
 navMain.classList.remove('main-nav--nojs');
 navBurger.classList.remove('button-burger--nojs');
 
-navToggle.addEventListener('click', function () {
+navToggle.addEventListener('click', () => {
   if (navMain.classList.contains('main-nav--closed')) {
     navMain.classList.remove('main-nav--closed');
     navMain.classList.add('main-nav--opened');
@@ -15,7 +15,7 @@ navToggle.addEventListener('click', function () {
   }
 });
 
-navToggle.addEventListener('click', function () {
+navToggle.addEventListener('click', () => {
   if (navBurger.classList.contains('button-burger--closed')) {
     navBurger.classList.remove('button-burger--closed');
     navBurger.classList.add('button-burger--opened');

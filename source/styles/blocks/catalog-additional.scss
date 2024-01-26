@@ -32,6 +32,7 @@
   gap: 15px;
   font-family: inherit;
   color: $secondary-color;
+
   @media (min-width: $tablet-width) {
     column-gap: 20px;
   }

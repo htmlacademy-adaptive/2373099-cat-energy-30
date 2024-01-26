@@ -5,9 +5,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background:
-      linear-gradient(90deg, rgba(255, 255, 255, 0) 50%, #4a4a4c 50%, #4b4a4f 56%, #46454a 67%, #414045 70%,
-        #3e3d42 73%, #3e3d42 73%, #414045 77%, #3e3d42 79%, #3b3a3f 83%, #403f44 85%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 50%, #4a4a4c 50%, #4b4a4f 56%, #46454a 67%, #414045 70%, #3e3d42 73%, #3e3d42 73%, #414045 77%, #3e3d42 79%, #3b3a3f 83%, #403f44 85%);
   }
 }
 
@@ -17,8 +15,7 @@
     content: "";
     grid-column: 2/3;
     grid-row: 1/5;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(104, 183, 56, .85) 0%),
-      url("../../images/hero-background.jpg") no-repeat left bottom;
+    background: linear-gradient(90deg, rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 50%), url("../../images/hero-background.jpg") no-repeat left bottom;
     min-height: 694px;
   }
 }
@@ -60,8 +57,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 10px;
-  margin-top: 10px;
   width: 280px;
   margin: 0 auto;
   margin-top: 9px;

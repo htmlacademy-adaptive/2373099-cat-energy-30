@@ -2,8 +2,8 @@
   background:
     linear-gradient(0deg, rgba(255, 255, 255, 1) 37%, rgba(104, 183, 56, 0.85) 36%),
     url("../../images/index-background-mobile@2x.jpg") no-repeat top center,
-    linear-gradient(90deg, #504f55 50%, #fff 50%, transparent 0),
-    linear-gradient(270deg, #424147 50%, #fff 50%, transparent 0);
+    linear-gradient(90deg, #504f55 50%, #ffffff 50%, transparent 0),
+    linear-gradient(270deg, #424147 50%, #ffffff 50%, transparent 0);
 
   @media (min-width: $tablet-width) {
     background: none;
@@ -88,7 +88,6 @@
     position: relative;
     bottom: 583px;
     margin-left: 90px;
-
   }
 
   @media (min-width: $desktop-width) {
@@ -101,7 +100,6 @@
 }
 
 .hero__image {
-
   @media (min-width: $tablet-width) {
     margin: 0 auto;
     position: relative;
@@ -114,5 +112,4 @@
     left: 113px;
     top: 24px;
   }
-
 }

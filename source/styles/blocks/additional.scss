@@ -29,8 +29,8 @@
   line-height: 24px;
   font-weight: 400;
   width: fit-content;
-  background: #ffff;
-  box-shadow: -40px 0px 0px #ffffff, 40px 0px 0px #ffffff;
+  background-color: #ffffff;
+  box-shadow: -40px 0 0 #ffffff, 40px 0 0 #ffffff;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -54,7 +54,7 @@
   height: 2px;
   background: #68b738;
   right: calc(100% + 20px);
-  box-shadow: 100vw 0px 0px #68b738;
+  box-shadow: 100vw 0 0 #68b738;
   z-index: -1;
 
   @media (min-width: $tablet-width) {
@@ -142,7 +142,7 @@
 }
 
 .additional__button {
-  padding: 10px 0px;
+  padding: 10px 0;
   grid-column: 1/3;
 
   @media (min-width: $tablet-width) {
@@ -245,14 +245,14 @@
 }
 
 .additional__present {
-  background-image: url(../../images/present-mobile@2x.jpg);
+  background-image: url("../../images/present-mobile@2x.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-color: #68b738;
   margin-top: 34px;
 
   @media (min-width: $tablet-width) {
-    background-image: url(../../images/present-mobile@2x.jpg);
+    background-image: url("../../images/present-mobile@2x.jpg");
     margin-top: 67px;
     background-position: center;
     background-size: cover;
@@ -264,8 +264,8 @@
     margin: 0;
     background-size: cover;
     margin-top: 15px;
-    background-position-y: 0px;
-    background-position-x: 0px;
+    background-position-y: 0;
+    background-position-x: 0;
   }
 }
 
@@ -291,7 +291,6 @@
     padding: 68px 35px 25px;
     text-align: center;
   }
-
 }
 
 .additional__text--present::before {
@@ -316,6 +315,4 @@
     margin: 0 auto;
     margin-bottom: 34px;
   }
-
-
 }

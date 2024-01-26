@@ -1,9 +1,8 @@
 .advantages__title {
   margin: 0;
-  font-weight: bold;
+  font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  font-weight: 400;
   margin-top: 20px;
   margin-bottom: 40px;
 
@@ -18,8 +17,6 @@
     margin-bottom: 32px;
   }
 }
-
-
 
 .advantages__list {
   display: flex;
@@ -62,7 +59,6 @@
     gap: 31px;
     column-gap: 35px;
   }
-
 }
 
 .advantages__item::after {
@@ -80,6 +76,7 @@
     height: 80px;
     margin-top: 32px;
   }
+
   @media (min-width: $desktop-width) {
     margin-top: 40px;
   }
@@ -113,25 +110,23 @@
   }
 }
 
-
-
 .advantages__item--leaf::after {
-  background-image: url(../../images/icons-advantages/icon-leaf.svg);
+  background-image: url("../../images/icons-advantages/icon-leaf.svg");
   background-repeat: no-repeat;
 }
 
 .advantages__item--water::after {
-  background-image: url(../../images/icons-advantages/icon-water.svg);
+  background-image: url("../../images/icons-advantages/icon-water.svg");
   background-repeat: no-repeat;
 }
 
 .advantages__item--eat::after {
-  background-image: url(../../images/icons-advantages/icon-eat.svg);
+  background-image: url("../../images/icons-advantages/icon-eat.svg");
   background-repeat: no-repeat;
 }
 
 .advantages__item--time::after {
-  background-image: url(../../images/icons-advantages/icon-time.svg);
+  background-image: url("../../images/icons-advantages/icon-time.svg");
   background-repeat: no-repeat;
 }
 
@@ -139,7 +134,7 @@
   .advantages__item::before {
     content: counter(new);
     font-family: $primary-font;
-    color: #F2F2F2;
+    color: #f2f2f2;
     font-size: 280px;
     line-height: 280px;
     grid-column: 2/3;

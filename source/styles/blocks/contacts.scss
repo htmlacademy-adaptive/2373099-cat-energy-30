@@ -34,7 +34,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 410px;
-    background-color: #fff;
+    background-color: #ffffff;
     margin-top: 95px;
     margin-bottom: 106px;
     padding: 60px 74px 60px 80px;
@@ -45,11 +45,14 @@
     transform: translateX(-327px);
   }
 }
+
 .contacts__wrapper--form {
   margin-top: 4px;
+
   @media (min-width: $tablet-width) {
     margin-top: 60px;
   }
+
   @media (min-width: $desktop-width) {
     margin-top: 96px;
   }
@@ -57,9 +60,11 @@
 
 .contacts__wrapper--catalog {
   margin-top: 5px;
+
   @media (min-width: $tablet-width) {
     margin-top: 62px;
   }
+
   @media (min-width: $desktop-width) {
     margin-top: 95px;
   }

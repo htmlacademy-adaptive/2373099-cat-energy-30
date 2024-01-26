@@ -1,5 +1,3 @@
-
-
 function initCatSlider() {
   const container = document.querySelector('.example__figure');
   document.querySelector('.example__input')?.addEventListener('input', (e) => {
