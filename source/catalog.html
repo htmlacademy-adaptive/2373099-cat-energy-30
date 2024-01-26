@@ -17,8 +17,8 @@
 
 <body class="page__body">
 
-  <header class="main-header main-header--secondary">
-    <div class="main-header__wrapper page-container">
+  <header class="main-header main-header--secondary" data-test="header">
+    <div class="main-header__wrapper">
       <div class="main-header__nav">
         <a class="main-header__logo logo" href="index.html" aria-current="page">
           <picture>
@@ -32,11 +32,12 @@
           <img class="logo__image logo__image--text" src="images/logo/logo-text-mobile.svg" width="101" height="18"
             alt="Логотип «Cat energy».">
         </a>
-      </div>
-      <nav class="main-nav  main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle button-burger" type="button">
+        <button class="main-header__toggle button-burger button-burger--closed button-burger--nojs" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
+      </div>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -53,8 +54,8 @@
       </nav>
     </div>
   </header>
-  <main class="main page-container">
-    <section class="catalog page-container">
+  <main class="main page-container" data-test="main">
+    <section class="catalog page-container" data-test="catalog">
       <h1 class="catalog__title">Каталог продукции</h1>
       <h2 class="visually-hidden">Список карточек товаров</h2>
       <ul class="catalog__list">
@@ -294,7 +295,7 @@
         </li>
       </ul>
     </section>
-    <section class="additional page-container">
+    <section class="additional page-container" data-test="additional">
 
       <h2 class="additional__title">Дополнительные товары</h2>
       <div class="additional__wrapper ">
@@ -350,7 +351,7 @@
     </section>
 
   </main>
-  <section class="contacts contacts--catalog">
+  <section class="contacts contacts--catalog" data-test="contacts">
     <div class="contacts__wrapper contacts__wrapper--catalog page-container">
       <h2 class="visually-hidden">Контакты</h2>
       <p class="contacts__title">Приглашаем<br>к сотрудничеству дилеров!</p>
@@ -372,7 +373,7 @@
         alt="Карта.">
     </picture>
   </section>
-  <footer class="main-footer">
+  <footer class="main-footer" data-test="footer">
     <div class="main-footer__wrapper page-container">
       <a class="main-footer__logo logo" href="index.html">
         <picture>

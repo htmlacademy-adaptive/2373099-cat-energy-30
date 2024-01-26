@@ -135,7 +135,6 @@
   }
 }
 
-
 .additional__description {
   font-family: $secondary-font;
   font-size: 14px;
@@ -246,12 +245,14 @@
 }
 
 .additional__present {
-  background-image: url(../../images/present-mobile.jpg);
+  background-image: url(../../images/present-mobile@2x.jpg);
   background-size: contain;
   background-repeat: no-repeat;
+  background-color: #68b738;
   margin-top: 34px;
 
   @media (min-width: $tablet-width) {
+    background-image: url(../../images/present-mobile@2x.jpg);
     margin-top: 67px;
     background-position: center;
     background-size: cover;
