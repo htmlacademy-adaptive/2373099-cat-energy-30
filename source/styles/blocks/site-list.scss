@@ -1,27 +1,108 @@
 .site-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  align-items: center;
-  max-width: 550px;
-  justify-content: flex-end;
-  list-style-type: none;
-  padding-top: 71px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 550px;
+    gap: 33px;
+    margin-top: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 35px;
+  }
 }
 
-.site-list__item:not(:last-child) {
-  padding-right: 32px;
+.site-list.active {
+  display: grid;
+}
+
+.site-list__item {
+  margin: 0;
+}
+
+.site-list__item::before {
+  display: block;
+  content: "";
+  border-top: 1px solid #e6e6e6;
+
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .site-list__link {
-  text-decoration: none;
-  color: inherit;
-  text-align: center;
-  padding: 12px 0;
+  position: relative;
+  display: block;
+  padding: 22px 21px;
+  padding-bottom: 23px;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
   text-transform: uppercase;
+  text-decoration: none;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 6px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 5px 0;
+    font-size: 20px;
+    line-height: normal;
+  }
 }
 
-.site-list__item--current {
+.site-list__link:hover,
+.site-list__link:focus {
+  opacity: 0.6;
+}
 
+.site-list__link:disabled,
+.site-list__link--disabled:hover {
+  opacity: 0.3;
+}
+
+.site-list__item--current .site-list__link {
+  @media (min-width: $tablet-width) {
+    border-bottom: 2px #68b738 solid;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px #ffffff solid;
+  }
+}
+
+.site-list__item--secondary .site-list__link {
+  @media (min-width: $tablet-width) {
+    border-bottom: 2px #68b738 solid;
+  }
+}
+
+.site-list__link--secondary {
+  @media (min-width: $desktop-width) {
+    color: $primary-color;
+  }
+}
+
+.site-list__link--secondary:hover,
+.site-list__link--secondary:focus {
+  opacity: 0.6;
+}
+
+.site-list__link--secondary:disabled,
+.site-list__link--secondary--disabled:hover {
+  opacity: 0.3;
 }

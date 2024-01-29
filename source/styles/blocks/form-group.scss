@@ -1,13 +1,32 @@
 .form-group {
-  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
+  }
 }
+
 .form-group__label {
-  margin-right: 13px;
+  margin-right: 12px;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
   color: $secondary-color;
 }
+
+@media (min-width: $tablet-width) {
+  .form-group__label {
+    font-size: 20px;
+    line-height: normal;
+  }
+}
+
 .form-group__input {
   font-family: inherit;
   text-transform: uppercase;
@@ -16,6 +35,160 @@
   padding-top: 14px;
   padding-bottom: 13px;
   padding-left: 15px;
+  padding-right: 14px;
   border: 1px solid #e7e7e7;
   color: $secondary-color;
+  flex: 1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 19px;
+    padding-right: 14px;
+  }
+}
+
+.form-group__input:hover {
+  border-color: #cdcdcd;
+}
+
+.form-group__input:focus {
+  border-color: #444444;
+}
+
+.form-group__input:active {
+  border-color: #444444;
+}
+
+.form-group__input:disabled,
+.form-group__input--disabled:hover {
+  border-color: #ff8282;
+}
+
+.form-group__input:disabled,
+.form-group__input--disabled:focus {
+  border-color: #ff8282;
+}
+
+.form-group__input--comment {
+  min-height: 122px;
+  margin-bottom: 9px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 152px;
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 155px;
+    margin: 0;
+  }
+}
+
+.form-group__label--adress {
+  position: relative;
+  --color: #000000;
+  --bgi: url("../../images/icon-email.svg");
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.form-group__input--adress {
+  margin-left: 13px;
+}
+
+.form-group__label--adress::after {
+  display: block;
+  content: "";
+  position: absolute;
+  background-color: var(--color);
+  mask: var(--bgi) no-repeat center / contain;
+  width: 18px;
+  height: 15px;
+  left: 250px;
+  top: 14px;
+
+  @media (min-width: $tablet-width) {
+    left: 595px;
+    top: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 534px;
+  }
+}
+
+.form-group__label--adress:hover,
+.form-group__label--adress:focus {
+  --color: #68b738;
+}
+
+.form-group__label--adress:has(.form-group__input--adress:focus)::after {
+  --color: #68b738;
+}
+
+.form-group__label--tel:has(.form-group__input--tel:focus)::after {
+  --color: #68b738;
+}
+
+.form-group__input--tel {
+  margin-left: 13px;
+}
+
+.form-group__label--tel {
+  position: relative;
+  --color: #000000;
+  --bgi: url("../../images/icon-tel.svg");
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.form-group__label--tel::after {
+  display: block;
+  content: "";
+  position: absolute;
+  background-color: var(--color);
+  mask: var(--bgi) no-repeat center / contain;
+  width: 20px;
+  height: 19px;
+  left: 248px;
+  top: 10px;
+
+  @media (min-width: $tablet-width) {
+    left: 596px;
+    top: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 534px;
+  }
+}
+
+.form-group__label--tel:hover,
+.form-group__label--tel:focus {
+  --color: #68b738;
+}
+
+.form-group--adress {
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+}
+
+.form-group--tel {
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
 }

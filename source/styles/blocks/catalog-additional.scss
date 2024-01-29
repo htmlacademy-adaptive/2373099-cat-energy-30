@@ -1,10 +1,25 @@
-.catalog-additional {}
-
 .catalog-additional__list {
   display: flex;
+  gap: 13px;
   flex-wrap: wrap;
   justify-content: space-between;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 32px;
+    column-gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 32px;
+    column-gap: 82px;
+  }
 }
 
 .catalog-additional__item {
@@ -12,15 +27,65 @@
 }
 
 .catalog-additional__label {
+  display: flex;
+  align-items: center;
+  gap: 15px;
   font-family: inherit;
   color: $secondary-color;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 20px;
+  }
 }
 
 .catalog-additional__input {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  background-color: #ffffff;
+  border: 1px #cdcdcd solid;
+}
 
+@media (min-width: $tablet-width) {
+  .catalog-additional__input {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.catalog-additional__input[type="checkbox"]:checked {
+  content: "";
+  display: block;
+  background-image: url("../../images/check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-additional__input[type="checkbox"]:checked {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.catalog-additional__label:disabled,
+.catalog-additional__label--disabled:hover {
+  opacity: 0.3;
 }
 
 .catalog-additional__text {
   font-family: inherit;
   text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-additional__text {
+    font-size: 20px;
+    line-height: normal;
+  }
 }
