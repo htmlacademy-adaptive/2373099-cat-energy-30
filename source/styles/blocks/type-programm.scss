@@ -44,6 +44,10 @@
 .type-programm__label--disabled:hover {
   opacity: 0.3;
 }
+.type-programm__label:disabled,
+.type-programm__label--disabled:focus {
+  opacity: 0.3;
+}
 
 .type-programm__input {
   appearance: none;
