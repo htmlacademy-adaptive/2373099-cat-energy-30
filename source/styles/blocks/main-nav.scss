@@ -3,10 +3,6 @@
   background-color: #ffffff;
   display: grid;
 
-  @media (min-width: $tablet-width) {
-    margin-left: auto;
-  }
-
   @media (min-width: $desktop-width) {
     background-color: transparent;
     margin-left: auto;

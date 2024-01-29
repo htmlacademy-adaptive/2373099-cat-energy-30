@@ -1,6 +1,6 @@
 .example {
   background: #f2f2f2;
-  margin-top: 44px;
+  margin-top: 48px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -30,7 +30,7 @@
   grid-column: 1/3;
   padding: 0;
   margin: 0;
-  margin-top: 30px;
+  margin-top: 26px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -289,23 +289,92 @@
   transform: translateX(50%);
   background-color: #666666;
   pointer-events: none;
+  --bgi: url("../../images/icons/example-arrow.svg");
+  --color: #666666;
+}
+
+.example__button:hover,
+.example__button:focus {
+  background-color: #68b738;
+  color: #68b738;
+}
+
+.example__button:active {
+  background-color: #5eaa2f;
+  color: #5eaa2f;
+}
+
+.example__input:active + .example__button {
+  background-color: #5eaa2f;
+}
+
+.example__input:focus-visible + .example__button {
+  background-color: #68b738;
+}
+
+.example__input:hover + .example__button {
+  background-color: #68b738;
+}
+
+.example__button::before {
+  content: "";
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #666666;
+  border-radius: 50%;
+  box-sizing: border-box;
+  line-height: 1;
+  font-size: 20px;
+  color: #ffffff;
+  background: #ffffff;
+  position: absolute;
+  top: 106px;
+
+  @media (min-width: $tablet-width) {
+    top: 236px;
+  }
+}
+
+.example__input:active + .example__button::before {
+  border-color: #5eaa2f;
+}
+
+.example__input:focus-visible + .example__button::before {
+  border-color: #68b738;
+}
+
+.example__input:hover + .example__button::before {
+  border-color: #68b738;
 }
 
 .example__button::after {
   content: "";
-  flex-shrink: 0;
-  display: block;
-  background-image: url("../../images/icons/thumb.svg");
-  width: 40px;
-  height: 40px;
+  position: absolute;
+  background-color: var(--color);
+  mask: var(--bgi) no-repeat center / contain;
+  width: 27px;
+  height: 23px;
+  box-sizing: border-box;
+  line-height: 1;
+  top: 115px;
+
+  @media (min-width: $tablet-width) {
+    top: 245px;
+  }
 }
 
-.example__input:active + .button-line::after {
-  color: #666666;
-  background: #ffffff;
+.example__input:active + .example__button::after {
+  background-color: #5eaa2f;
 }
 
-.example__input:focus-visible + .button-line::after {
-  color: #666666;
-  background: #ffffff;
+.example__input:focus-visible + .example__button::after {
+  background-color: #68b738;
+}
+
+.example__input:hover + .example__button::after {
+  background-color: #68b738;
 }

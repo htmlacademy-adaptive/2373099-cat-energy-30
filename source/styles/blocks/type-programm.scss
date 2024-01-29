@@ -50,18 +50,26 @@
   width: 30px;
   height: 30px;
   background-color: #ffffff;
-  border: 1px #444444 solid;
+  border: 1px #cdcdcd solid;
   border-radius: 50%;
   margin: 0;
   margin-right: 15px;
-}
 
-@media (min-width: $tablet-width) {
-  .type-programm__input {
+  @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
     margin-right: 20px;
   }
+}
+
+.type-programm__input:hover,
+.type-programm__input:focus {
+  border-color: #bababa;
+}
+
+.type-programm__input:disabled,
+.type-programm__input--disabled:hover {
+  opacity: 0.3;
 }
 
 .type-programm__input[type="radio"]:checked {
@@ -70,12 +78,12 @@
   background-image: url("../../images/radio.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 13px;
   width: 30px;
   height: 30px;
-}
 
-@media (min-width: $tablet-width) {
-  .type-programm__input[type="radio"]:checked {
+  @media (min-width: $tablet-width) {
+    background-size: 18px;
     width: 40px;
     height: 40px;
   }

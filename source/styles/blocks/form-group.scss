@@ -50,9 +50,12 @@
   }
 }
 
-.form-group__input:hover,
-.form-group__input:focus {
+.form-group__input:hover {
   border-color: #cdcdcd;
+}
+
+.form-group__input:focus {
+  border-color: #444444;
 }
 
 .form-group__input:active {
@@ -105,8 +108,8 @@
   top: 14px;
 
   @media (min-width: $tablet-width) {
-    left: 596px;
-    top: 20px;
+    left: 595px;
+    top: 18px;
   }
 
   @media (min-width: $desktop-width) {
@@ -116,6 +119,14 @@
 
 .form-group__label--adress:hover,
 .form-group__label--adress:focus {
+  --color: #68b738;
+}
+
+.form-group__label--adress:has(.form-group__input--adress:focus)::after {
+  --color: #68b738;
+}
+
+.form-group__label--tel:has(.form-group__input--tel:focus)::after {
   --color: #68b738;
 }
 
@@ -146,7 +157,7 @@
 
   @media (min-width: $tablet-width) {
     left: 596px;
-    top: 20px;
+    top: 17px;
   }
 
   @media (min-width: $desktop-width) {
