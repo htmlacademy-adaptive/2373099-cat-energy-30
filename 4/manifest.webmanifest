@@ -1,7 +1,0 @@
-{
-  "icons": [
-    { "src": "favicons/favicon-32x32.png", "type": "image/png", "sizes": "32x13" },
-    { "src": "favicons/apple-icon-180x180.png", "type": "image/png", "sizes": "180x180" },
-    { "src": "favicons/android-icon-192x192.png", "type": "image/png", "sizes": "192x192" }
-  ]
-}

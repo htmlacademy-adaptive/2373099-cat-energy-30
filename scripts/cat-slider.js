@@ -1,0 +1,1 @@
+function n(){let t=document.querySelector(".example__figure");document.querySelector(".example__input")?.addEventListener("input",e=>{t.style.setProperty("--persent",`${e.target.value}%`),document.querySelector("output").innerHTML=`${e.target.value}%`})}n();
