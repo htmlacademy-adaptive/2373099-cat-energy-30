@@ -66,8 +66,9 @@
 .form-group__input--disabled:hover {
   border-color: #ff8282;
 }
+
 .form-group__input:disabled,
-.form-group__input--disabled:hover {
+.form-group__input--disabled:focus {
   border-color: #ff8282;
 }
 
