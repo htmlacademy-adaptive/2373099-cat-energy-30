@@ -251,17 +251,15 @@
   background-color: #68b738;
   margin-top: 34px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/present-mobile@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     margin-top: 67px;
     background-position: center;
     background-size: cover;
     background-position-y: -320px;
-    background-position-x: 5px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../images/present-mobile@2x.jpg");
-      background-size: 703px auto;
-    }
   }
 
   @media (min-width: $desktop-width) {
