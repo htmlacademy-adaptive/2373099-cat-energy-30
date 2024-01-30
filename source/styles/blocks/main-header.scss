@@ -15,8 +15,13 @@
     content: "";
     grid-column: 2/3;
     grid-row: 1/5;
-    background: linear-gradient(90deg, rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 50%), url("../../images/hero-background.jpg") no-repeat left bottom;
     min-height: 694px;
+    background: linear-gradient(90deg, rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 50%), url("../../images/index-background-desktop@2x@1x.jpg") no-repeat left bottom;
+
+    @media (min-resolution: 2dppx) {
+      background: linear-gradient(90deg, rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 50%), url("../../images/index-background-desktop@2x@2x.jpg");
+      background-size: 1041px auto;
+    }
   }
 }
 

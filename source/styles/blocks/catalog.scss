@@ -44,19 +44,19 @@
   display: grid;
   grid-template-columns: 140px 1fr;
   position: relative;
-  max-height: 164px;
+  min-height: 164px;
   padding-top: 21px;
   padding-bottom: 24px;
   width: fit-content;
   background: #ffffff;
 
   @media (min-width: $tablet-width) {
-    grid-template-rows: 220px auto auto auto;
+    grid-template-rows: 220px 1fr auto auto;
     background: linear-gradient(0deg, rgba(242, 242, 242, 1) 84%, rgba(255, 255, 255, 1) 84%);
     border: none;
     padding: 0;
     max-width: 324px;
-    max-height: 511px;
+    min-height: 511px;
   }
 
   @media (min-width: $desktop-width) {

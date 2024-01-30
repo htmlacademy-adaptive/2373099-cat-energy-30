@@ -1,6 +1,11 @@
 .type-programm {
   @media (min-width: $tablet-width) {
+    max-width: 628px;
     border: 1px solid #e7e7e7;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 570px;
   }
 }
 
@@ -13,7 +18,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 25px auto 25px 27px;
+    margin: 25px 27px 25px 27px;
   }
 }
 
@@ -25,6 +30,7 @@
 
 .type-programm__label {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   font-family: inherit;
   font-size: 16px;
