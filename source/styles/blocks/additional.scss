@@ -245,19 +245,23 @@
 }
 
 .additional__present {
-  background-image: url("../../images/present-mobile@2x.jpg");
+  background-image: url("../../images/present-mobile@1x.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-color: #68b738;
   margin-top: 34px;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../images/present-mobile@2x.jpg");
     margin-top: 67px;
     background-position: center;
     background-size: cover;
     background-position-y: -320px;
     background-position-x: 5px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/present-mobile@2x.jpg");
+      background-size: 703px auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
