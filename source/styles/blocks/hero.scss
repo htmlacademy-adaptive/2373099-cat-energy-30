@@ -1,9 +1,17 @@
 .hero {
   background:
     linear-gradient(0deg, rgba(255, 255, 255, 1) 37%, rgba(104, 183, 56, 0.85) 36%),
-    url("../../images/index-background-mobile@2x.jpg") no-repeat top center,
+    url("../../images/index-background-mobile@1x.jpg") no-repeat top center/320px auto,
     linear-gradient(90deg, #504f55 50%, #ffffff 50%, transparent 0),
     linear-gradient(270deg, #424147 50%, #ffffff 50%, transparent 0);
+
+  @media (min-resolution: 2dppx) {
+    background:
+      linear-gradient(0deg, rgba(255, 255, 255, 1) 37%, rgba(104, 183, 56, 0.85) 36%),
+      url("../../images/index-background-mobile@2x.jpg") no-repeat top center,
+      linear-gradient(90deg, #504f55 50%, #ffffff 50%, transparent 0),
+      linear-gradient(270deg, #424147 50%, #ffffff 50%, transparent 0);
+  }
 
   @media (min-width: $tablet-width) {
     background: none;

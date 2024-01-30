@@ -28,12 +28,14 @@
 
 .catalog-additional__label {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 15px;
   font-family: inherit;
   color: $secondary-color;
 
   @media (min-width: $tablet-width) {
+    row-gap: 0;
     column-gap: 20px;
   }
 }
